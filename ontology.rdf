@@ -1,0 +1,667 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/sifis/hazards#"
+     xml:base="https://purl.org/sifis/hazards"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sho="https://purl.org/sifis/hazards#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:spdx="https://spdx.org/rdf/terms/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:schema="http://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://purl.org/sifis/hazards">
+        <dcterms:contributor rdf:resource="https://www.dauin.polito.it/it/personale/scheda/(nominativo)/luigi.derussis"/>
+        <dcterms:creator rdf:resource="https://www.iit.cnr.it/marco.rasori/"/>
+        <dcterms:description xml:lang="en">The SIFIS-Home Hazards Ontology (SHO) has been created to extend the Thing Description (TD) of smart devices within Web of Things (WoT). The ontology defines various types of hazard as Individual which can be used to characterise Properties, Actions, and Events in a TD.</dcterms:description>
+        <dcterms:modified xml:lang="en">2022-05-9</dcterms:modified>
+        <dcterms:publisher rdf:resource="https://www.sifis-home.eu"/>
+        <dcterms:title xml:lang="en">The SIFIS-Home Hazards Ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>sho</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://purl.org/sifis/hazards</vann:preferredNamespaceUri>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v1.0.2</owl:versionInfo>
+        <spdx:licenseId>MIT</spdx:licenseId>
+        <spdx:licenseText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The MIT License (MIT)
+
+Copyright (c) 2022 The SIFIS-Home project &lt;https://www.sifis-home.eu&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</spdx:licenseText>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/description -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/description"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/name -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/name"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- https://spdx.org/rdf/terms/licenseId -->
+
+    <owl:AnnotationProperty rdf:about="https://spdx.org/rdf/terms/licenseId"/>
+    
+
+
+    <!-- https://spdx.org/rdf/terms/licenseText -->
+
+    <owl:AnnotationProperty rdf:about="https://spdx.org/rdf/terms/licenseText"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#level -->
+
+    <rdfs:Datatype rdf:about="https://purl.org/sifis/hazards#level">
+        <rdfs:comment xml:lang="en">An integer in the range from zero to ten included. [0,10]</rdfs:comment>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/sifis/hazards#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sifis/hazards#hasCategory">
+        <rdfs:domain rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <rdfs:range rdf:resource="https://purl.org/sifis/hazards#Category"/>
+        <schema:domainIncludes rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <schema:rangeIncludes rdf:resource="https://purl.org/sifis/hazards#Category"/>
+        <rdfs:comment xml:lang="en">A relationship identifying the category of a hazard.</rdfs:comment>
+        <rdfs:label xml:lang="en">has category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#hasHazard -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sifis/hazards#hasHazard">
+        <rdfs:domain rdf:resource="https://www.w3.org/2019/wot/td#InteractionAffordance"/>
+        <rdfs:range rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <schema:domainIncludes rdf:resource="https://www.w3.org/2019/wot/td#InteractionAffordance"/>
+        <schema:rangeIncludes rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <rdfs:comment xml:lang="en">A relationship identifying a hazard of an interaction affordance, being either a property, an action, or an event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has hazard</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/sifis/hazards#description -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/sifis/hazards#description">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.org/sifis/hazards#Category"/>
+                    <rdf:Description rdf:about="https://purl.org/sifis/hazards#Hazard"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <schema:domainIncludes rdf:resource="https://purl.org/sifis/hazards#Category"/>
+        <schema:domainIncludes rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A relationship identifying the description of either a hazard or a category.</rdfs:comment>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#name -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/sifis/hazards#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.org/sifis/hazards#Category"/>
+                    <rdf:Description rdf:about="https://purl.org/sifis/hazards#Hazard"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <schema:domainIncludes rdf:resource="https://purl.org/sifis/hazards#Category"/>
+        <schema:domainIncludes rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <schema:rangeIncludes rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A relationship identifying the name of either a hazard or a category.</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#riskScore -->
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/sifis/hazards#riskScore">
+        <rdfs:domain rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <rdfs:range rdf:resource="https://purl.org/sifis/hazards#level"/>
+        <schema:domainIncludes rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <schema:rangeIncludes rdf:resource="https://purl.org/sifis/hazards#level"/>
+        <rdfs:comment xml:lang="en">A relationship identifying the risk score associated with a hazard.</rdfs:comment>
+        <rdfs:label xml:lang="en">risk score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/sifis/hazards#Category -->
+
+    <owl:Class rdf:about="https://purl.org/sifis/hazards#Category">
+        <owl:disjointWith rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <owl:disjointWith rdf:resource="https://www.w3.org/2019/wot/td#InteractionAffordance"/>
+        <rdfs:comment xml:lang="en">A broad class gathering hazards with similar characteristics.</rdfs:comment>
+        <rdfs:label xml:lang="en">Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#Hazard -->
+
+    <owl:Class rdf:about="https://purl.org/sifis/hazards#Hazard">
+        <owl:disjointWith rdf:resource="https://www.w3.org/2019/wot/td#InteractionAffordance"/>
+        <rdfs:comment xml:lang="en">A possible risk associated with the invocation of a given interaction affordance. Within a thing description, properties, actions, and events can be invoked, and their execution may lead to hazards.</rdfs:comment>
+        <rdfs:label xml:lang="en">Hazard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/td#InteractionAffordance -->
+
+    <owl:Class rdf:about="https://www.w3.org/2019/wot/td#InteractionAffordance">
+        <rdfs:comment xml:lang="en">Metadata of a Thing that defines how a consumer may interact with the Thing.</rdfs:comment>
+        <rdfs:label xml:lang="en">Interaction affordance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/sifis/hazards#AirPoisoning -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#AirPoisoning">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution may release toxic gases</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Air poisoning</name>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">AirPoisoning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#Asphyxia -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#Asphyxia">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution may cause oxygen deficiency by gaseous substances</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asphyxia</name>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">Asphyxia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#AudioVideoRecordAndStore -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#AudioVideoRecordAndStore">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Privacy"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to record and save a video with audio on persistent storage</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio video record and store</name>
+        <rdfs:comment xml:lang="en">A type of privacy-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">AudioVideoRecordAndStore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#AudioVideoStream -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#AudioVideoStream">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Privacy"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to obtain a video stream with audio</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audio video stream</name>
+        <rdfs:comment xml:lang="en">A type of privacy-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">AudioVideoStream</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#ElectricEnergyConsumption -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#ElectricEnergyConsumption">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Financial"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution enables a device that consumes electricity</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric energy consumption</name>
+        <riskScore rdf:datatype="https://purl.org/sifis/hazards#level"></riskScore>
+        <rdfs:comment xml:lang="en">A type of finance-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">ElectricEnergyConsumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#Explosion -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#Explosion">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution may cause an explosion</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explosion</name>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">Explosion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#Financial -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#Financial">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Category"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category which includes all the financial-related hazards.</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Financial</name>
+        <rdfs:comment xml:lang="en">A type of category referring to hazards that lead to an expense</rdfs:comment>
+        <rdfs:label xml:lang="en">Financial</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#FireHazard -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#FireHazard">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution may cause fire</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fire hazard</name>
+        <riskScore rdf:datatype="https://purl.org/sifis/hazards#level"></riskScore>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">FireHazard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#GasConsumption -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#GasConsumption">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Financial"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution enables a device that consumes gas</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas consumption</name>
+        <riskScore rdf:datatype="https://purl.org/sifis/hazards#level"></riskScore>
+        <rdfs:comment xml:lang="en">A type of finance-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">GasConsumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#LogEnergyConsumption -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#LogEnergyConsumption">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Privacy"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to get and save information about the app&apos;s energy impact on the device the app runs on</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Log energy consumption</name>
+        <rdfs:comment xml:lang="en">A type of privacy-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">LogEnergyConsumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#LogUsageTime -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#LogUsageTime">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Privacy"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to get and save information about the app&apos;s duration of use</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Log usage time</name>
+        <rdfs:comment xml:lang="en">A type of privacy-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">LogUsageTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#PaySubscriptionFee -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#PaySubscriptionFee">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Financial"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to use payment information and make a periodic payment</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pay subscription fee</name>
+        <rdfs:comment xml:lang="en">A type of finance-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">PaySubscriptionFee</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#PowerOutage -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#PowerOutage">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution may cause an interruption in the supply of electricity</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power outage</name>
+        <riskScore rdf:datatype="https://purl.org/sifis/hazards#level"></riskScore>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">PowerOutage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#PowerSurge -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#PowerSurge">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution may lead to exposure to high voltages</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power surge</name>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">PowerSurge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#Privacy -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#Privacy">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Category"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category which includes all the privacy-related hazards.</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Privacy</name>
+        <rdfs:comment xml:lang="en">A type of category referring to hazards that may compromise privacy</rdfs:comment>
+        <rdfs:label xml:lang="en">Privacy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#RecordIssuedCommands -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#RecordIssuedCommands">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Privacy"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to get and save user inputs</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Record issued commands</name>
+        <rdfs:comment xml:lang="en">A type of privacy-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">RecordIssuedCommands</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#RecordUserPreferences -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#RecordUserPreferences">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Privacy"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to get and save information about the user&apos;s preferences</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Record user preferences</name>
+        <rdfs:comment xml:lang="en">A type of privacy-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">RecordUserPreferences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#Safety -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#Safety">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Category"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category which includes all the safety-related hazards.</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safety</name>
+        <rdfs:comment xml:lang="en">A type of category referring to hazards that may lead to physical harm to people and/or assets</rdfs:comment>
+        <rdfs:label xml:lang="en">Safety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#SpendMoney -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#SpendMoney">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Financial"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to use payment information and make a payment transaction</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spend money</name>
+        <rdfs:comment xml:lang="en">A type of finance-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">SpendMoney</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#SpoiledFood -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#SpoiledFood">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution may lead to rotten food</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spoiled food</name>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">SpoiledFood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#TakeDeviceScreenshots -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#TakeDeviceScreenshots">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Privacy"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to read the display output and take screenshots of it</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Take device screenshots</name>
+        <rdfs:comment xml:lang="en">A type of privacy-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">TakeDeviceScreenshots</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#TakePictures -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#TakePictures">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Privacy"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution authorises the app to use a camera and take photos</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Take pictures</name>
+        <rdfs:comment xml:lang="en">A type of privacy-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">TakePictures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution disables a protection mechanism and unauthorised individuals may physically enter home</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unauthorised physical access</name>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">UnauthorisedPhysicalAccess</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#WaterConsumption -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#WaterConsumption">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Financial"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution enables a device that consumes water</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water consumption</name>
+        <riskScore rdf:datatype="https://purl.org/sifis/hazards#level"></riskScore>
+        <rdfs:comment xml:lang="en">A type of finance-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">WaterConsumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sifis/hazards#WaterFlooding -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sifis/hazards#WaterFlooding">
+        <rdf:type rdf:resource="https://purl.org/sifis/hazards#Hazard"/>
+        <hasCategory rdf:resource="https://purl.org/sifis/hazards#Safety"/>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution allows water usage which may lead to flood</description>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water flooding</name>
+        <rdfs:comment xml:lang="en">A type of safety-related hazard</rdfs:comment>
+        <rdfs:label xml:lang="en">WaterFlooding</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,442 @@
+<https://purl.org/sifis/hazards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://purl.org/sifis/hazards> <http://purl.org/dc/terms/contributor> <https://www.dauin.polito.it/it/personale/scheda/(nominativo)/luigi.derussis> .
+<https://purl.org/sifis/hazards> <http://purl.org/dc/terms/creator> <https://www.iit.cnr.it/marco.rasori/> .
+<https://purl.org/sifis/hazards> <http://purl.org/dc/terms/description> "The SIFIS-Home Hazards Ontology (SHO) has been created to extend the Thing Description (TD) of smart devices within Web of Things (WoT). The ontology defines various types of hazard as Individual which can be used to characterise Properties, Actions, and Events in a TD."@en .
+<https://purl.org/sifis/hazards> <http://purl.org/dc/terms/modified> "2022-05-9"@en .
+<https://purl.org/sifis/hazards> <http://purl.org/dc/terms/publisher> <https://www.sifis-home.eu> .
+<https://purl.org/sifis/hazards> <http://purl.org/dc/terms/title> "The SIFIS-Home Hazards Ontology"@en .
+<https://purl.org/sifis/hazards> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sho" .
+<https://purl.org/sifis/hazards> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://purl.org/sifis/hazards" .
+<https://purl.org/sifis/hazards> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.2" .
+<https://purl.org/sifis/hazards> <https://spdx.org/rdf/terms/licenseId> "MIT" .
+<https://purl.org/sifis/hazards> <https://spdx.org/rdf/terms/licenseText> "The MIT License (MIT)\n\nCopyright (c) 2022 The SIFIS-Home project <https://www.sifis-home.eu>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/description
+<http://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://spdx.org/rdf/terms/licenseId
+<https://spdx.org/rdf/terms/licenseId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://spdx.org/rdf/terms/licenseText
+<https://spdx.org/rdf/terms/licenseText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# https://purl.org/sifis/hazards#level
+<https://purl.org/sifis/hazards#level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://purl.org/sifis/hazards#level> <http://www.w3.org/2000/01/rdf-schema#comment> "An integer in the range from zero to ten included. [0,10]"@en .
+<https://purl.org/sifis/hazards#level> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/sifis/hazards#hasCategory
+<https://purl.org/sifis/hazards#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/sifis/hazards#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#hasCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/sifis/hazards#Category> .
+<https://purl.org/sifis/hazards#hasCategory> <http://schema.org/domainIncludes> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#hasCategory> <http://schema.org/rangeIncludes> <https://purl.org/sifis/hazards#Category> .
+<https://purl.org/sifis/hazards#hasCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the category of a hazard."@en .
+<https://purl.org/sifis/hazards#hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has category"@en .
+# 
+# https://purl.org/sifis/hazards#hasHazard
+<https://purl.org/sifis/hazards#hasHazard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/sifis/hazards#hasHazard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/2019/wot/td#InteractionAffordance> .
+<https://purl.org/sifis/hazards#hasHazard> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#hasHazard> <http://schema.org/domainIncludes> <https://www.w3.org/2019/wot/td#InteractionAffordance> .
+<https://purl.org/sifis/hazards#hasHazard> <http://schema.org/rangeIncludes> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#hasHazard> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying a hazard of an interaction affordance, being either a property, an action, or an event."@en .
+<https://purl.org/sifis/hazards#hasHazard> <http://www.w3.org/2000/01/rdf-schema#label> "has hazard"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/sifis/hazards#description
+<https://purl.org/sifis/hazards#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/sifis/hazards#description> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sifis/hazards#Category> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sifis/hazards#Hazard> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://purl.org/sifis/hazards#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/sifis/hazards#description> <http://schema.org/domainIncludes> <https://purl.org/sifis/hazards#Category> .
+<https://purl.org/sifis/hazards#description> <http://schema.org/domainIncludes> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#description> <http://schema.org/rangeIncludes> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/sifis/hazards#description> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the description of either a hazard or a category."@en .
+<https://purl.org/sifis/hazards#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+# 
+# https://purl.org/sifis/hazards#name
+<https://purl.org/sifis/hazards#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/sifis/hazards#name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sifis/hazards#Category> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sifis/hazards#Hazard> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://purl.org/sifis/hazards#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/sifis/hazards#name> <http://schema.org/domainIncludes> <https://purl.org/sifis/hazards#Category> .
+<https://purl.org/sifis/hazards#name> <http://schema.org/domainIncludes> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#name> <http://schema.org/rangeIncludes> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/sifis/hazards#name> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the name of either a hazard or a category."@en .
+<https://purl.org/sifis/hazards#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# https://purl.org/sifis/hazards#riskScore
+<https://purl.org/sifis/hazards#riskScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/sifis/hazards#riskScore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#riskScore> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/sifis/hazards#level> .
+<https://purl.org/sifis/hazards#riskScore> <http://schema.org/domainIncludes> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#riskScore> <http://schema.org/rangeIncludes> <https://purl.org/sifis/hazards#level> .
+<https://purl.org/sifis/hazards#riskScore> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the risk score associated with a hazard."@en .
+<https://purl.org/sifis/hazards#riskScore> <http://www.w3.org/2000/01/rdf-schema#label> "risk score"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/sifis/hazards#Category
+<https://purl.org/sifis/hazards#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/sifis/hazards#Category> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#Category> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.w3.org/2019/wot/td#InteractionAffordance> .
+<https://purl.org/sifis/hazards#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "A broad class gathering hazards with similar characteristics."@en .
+<https://purl.org/sifis/hazards#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category"@en .
+# 
+# https://purl.org/sifis/hazards#Hazard
+<https://purl.org/sifis/hazards#Hazard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/sifis/hazards#Hazard> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.w3.org/2019/wot/td#InteractionAffordance> .
+<https://purl.org/sifis/hazards#Hazard> <http://www.w3.org/2000/01/rdf-schema#comment> "A possible risk associated with the invocation of a given interaction affordance. Within a thing description, properties, actions, and events can be invoked, and their execution may lead to hazards."@en .
+<https://purl.org/sifis/hazards#Hazard> <http://www.w3.org/2000/01/rdf-schema#label> "Hazard"@en .
+# 
+# https://www.w3.org/2019/wot/td#InteractionAffordance
+<https://www.w3.org/2019/wot/td#InteractionAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2019/wot/td#InteractionAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "Metadata of a Thing that defines how a consumer may interact with the Thing."@en .
+<https://www.w3.org/2019/wot/td#InteractionAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "Interaction affordance"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/sifis/hazards#AirPoisoning
+<https://purl.org/sifis/hazards#AirPoisoning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#AirPoisoning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#AirPoisoning> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#AirPoisoning> <https://purl.org/sifis/hazards#description> "The execution may release toxic gases" .
+<https://purl.org/sifis/hazards#AirPoisoning> <https://purl.org/sifis/hazards#name> "Air poisoning" .
+<https://purl.org/sifis/hazards#AirPoisoning> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#AirPoisoning> <http://www.w3.org/2000/01/rdf-schema#label> "AirPoisoning"@en .
+# 
+# https://purl.org/sifis/hazards#Asphyxia
+<https://purl.org/sifis/hazards#Asphyxia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#Asphyxia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#Asphyxia> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#Asphyxia> <https://purl.org/sifis/hazards#description> "The execution may cause oxygen deficiency by gaseous substances" .
+<https://purl.org/sifis/hazards#Asphyxia> <https://purl.org/sifis/hazards#name> "Asphyxia" .
+<https://purl.org/sifis/hazards#Asphyxia> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#Asphyxia> <http://www.w3.org/2000/01/rdf-schema#label> "Asphyxia"@en .
+# 
+# https://purl.org/sifis/hazards#AudioVideoRecordAndStore
+<https://purl.org/sifis/hazards#AudioVideoRecordAndStore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#AudioVideoRecordAndStore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#AudioVideoRecordAndStore> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Privacy> .
+<https://purl.org/sifis/hazards#AudioVideoRecordAndStore> <https://purl.org/sifis/hazards#description> "The execution authorises the app to record and save a video with audio on persistent storage" .
+<https://purl.org/sifis/hazards#AudioVideoRecordAndStore> <https://purl.org/sifis/hazards#name> "Audio video record and store" .
+<https://purl.org/sifis/hazards#AudioVideoRecordAndStore> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
+<https://purl.org/sifis/hazards#AudioVideoRecordAndStore> <http://www.w3.org/2000/01/rdf-schema#label> "AudioVideoRecordAndStore"@en .
+# 
+# https://purl.org/sifis/hazards#AudioVideoStream
+<https://purl.org/sifis/hazards#AudioVideoStream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#AudioVideoStream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#AudioVideoStream> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Privacy> .
+<https://purl.org/sifis/hazards#AudioVideoStream> <https://purl.org/sifis/hazards#description> "The execution authorises the app to obtain a video stream with audio" .
+<https://purl.org/sifis/hazards#AudioVideoStream> <https://purl.org/sifis/hazards#name> "Audio video stream" .
+<https://purl.org/sifis/hazards#AudioVideoStream> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
+<https://purl.org/sifis/hazards#AudioVideoStream> <http://www.w3.org/2000/01/rdf-schema#label> "AudioVideoStream"@en .
+# 
+# https://purl.org/sifis/hazards#ElectricEnergyConsumption
+<https://purl.org/sifis/hazards#ElectricEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#ElectricEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#ElectricEnergyConsumption> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Financial> .
+<https://purl.org/sifis/hazards#ElectricEnergyConsumption> <https://purl.org/sifis/hazards#description> "The execution enables a device that consumes electricity" .
+<https://purl.org/sifis/hazards#ElectricEnergyConsumption> <https://purl.org/sifis/hazards#name> "Electric energy consumption" .
+<https://purl.org/sifis/hazards#ElectricEnergyConsumption> <https://purl.org/sifis/hazards#riskScore> ""^^<https://purl.org/sifis/hazards#level> .
+<https://purl.org/sifis/hazards#ElectricEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of finance-related hazard"@en .
+<https://purl.org/sifis/hazards#ElectricEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "ElectricEnergyConsumption"@en .
+# 
+# https://purl.org/sifis/hazards#Explosion
+<https://purl.org/sifis/hazards#Explosion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#Explosion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#Explosion> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#Explosion> <https://purl.org/sifis/hazards#description> "The execution may cause an explosion" .
+<https://purl.org/sifis/hazards#Explosion> <https://purl.org/sifis/hazards#name> "Explosion" .
+<https://purl.org/sifis/hazards#Explosion> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#Explosion> <http://www.w3.org/2000/01/rdf-schema#label> "Explosion"@en .
+# 
+# https://purl.org/sifis/hazards#Financial
+<https://purl.org/sifis/hazards#Financial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#Financial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Category> .
+<https://purl.org/sifis/hazards#Financial> <https://purl.org/sifis/hazards#description> "Category which includes all the financial-related hazards." .
+<https://purl.org/sifis/hazards#Financial> <https://purl.org/sifis/hazards#name> "Financial" .
+<https://purl.org/sifis/hazards#Financial> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of category referring to hazards that lead to an expense"@en .
+<https://purl.org/sifis/hazards#Financial> <http://www.w3.org/2000/01/rdf-schema#label> "Financial"@en .
+# 
+# https://purl.org/sifis/hazards#FireHazard
+<https://purl.org/sifis/hazards#FireHazard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#FireHazard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#FireHazard> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#FireHazard> <https://purl.org/sifis/hazards#description> "The execution may cause fire" .
+<https://purl.org/sifis/hazards#FireHazard> <https://purl.org/sifis/hazards#name> "Fire hazard" .
+<https://purl.org/sifis/hazards#FireHazard> <https://purl.org/sifis/hazards#riskScore> ""^^<https://purl.org/sifis/hazards#level> .
+<https://purl.org/sifis/hazards#FireHazard> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#FireHazard> <http://www.w3.org/2000/01/rdf-schema#label> "FireHazard"@en .
+# 
+# https://purl.org/sifis/hazards#GasConsumption
+<https://purl.org/sifis/hazards#GasConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#GasConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#GasConsumption> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Financial> .
+<https://purl.org/sifis/hazards#GasConsumption> <https://purl.org/sifis/hazards#description> "The execution enables a device that consumes gas" .
+<https://purl.org/sifis/hazards#GasConsumption> <https://purl.org/sifis/hazards#name> "Gas consumption" .
+<https://purl.org/sifis/hazards#GasConsumption> <https://purl.org/sifis/hazards#riskScore> ""^^<https://purl.org/sifis/hazards#level> .
+<https://purl.org/sifis/hazards#GasConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of finance-related hazard"@en .
+<https://purl.org/sifis/hazards#GasConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "GasConsumption"@en .
+# 
+# https://purl.org/sifis/hazards#LogEnergyConsumption
+<https://purl.org/sifis/hazards#LogEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#LogEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#LogEnergyConsumption> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Privacy> .
+<https://purl.org/sifis/hazards#LogEnergyConsumption> <https://purl.org/sifis/hazards#description> "The execution authorises the app to get and save information about the app's energy impact on the device the app runs on" .
+<https://purl.org/sifis/hazards#LogEnergyConsumption> <https://purl.org/sifis/hazards#name> "Log energy consumption" .
+<https://purl.org/sifis/hazards#LogEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
+<https://purl.org/sifis/hazards#LogEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "LogEnergyConsumption"@en .
+# 
+# https://purl.org/sifis/hazards#LogUsageTime
+<https://purl.org/sifis/hazards#LogUsageTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#LogUsageTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#LogUsageTime> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Privacy> .
+<https://purl.org/sifis/hazards#LogUsageTime> <https://purl.org/sifis/hazards#description> "The execution authorises the app to get and save information about the app's duration of use" .
+<https://purl.org/sifis/hazards#LogUsageTime> <https://purl.org/sifis/hazards#name> "Log usage time" .
+<https://purl.org/sifis/hazards#LogUsageTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
+<https://purl.org/sifis/hazards#LogUsageTime> <http://www.w3.org/2000/01/rdf-schema#label> "LogUsageTime"@en .
+# 
+# https://purl.org/sifis/hazards#PaySubscriptionFee
+<https://purl.org/sifis/hazards#PaySubscriptionFee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#PaySubscriptionFee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#PaySubscriptionFee> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Financial> .
+<https://purl.org/sifis/hazards#PaySubscriptionFee> <https://purl.org/sifis/hazards#description> "The execution authorises the app to use payment information and make a periodic payment" .
+<https://purl.org/sifis/hazards#PaySubscriptionFee> <https://purl.org/sifis/hazards#name> "Pay subscription fee" .
+<https://purl.org/sifis/hazards#PaySubscriptionFee> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of finance-related hazard"@en .
+<https://purl.org/sifis/hazards#PaySubscriptionFee> <http://www.w3.org/2000/01/rdf-schema#label> "PaySubscriptionFee"@en .
+# 
+# https://purl.org/sifis/hazards#PowerOutage
+<https://purl.org/sifis/hazards#PowerOutage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#PowerOutage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#PowerOutage> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#PowerOutage> <https://purl.org/sifis/hazards#description> "The execution may cause an interruption in the supply of electricity" .
+<https://purl.org/sifis/hazards#PowerOutage> <https://purl.org/sifis/hazards#name> "Power outage" .
+<https://purl.org/sifis/hazards#PowerOutage> <https://purl.org/sifis/hazards#riskScore> ""^^<https://purl.org/sifis/hazards#level> .
+<https://purl.org/sifis/hazards#PowerOutage> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#PowerOutage> <http://www.w3.org/2000/01/rdf-schema#label> "PowerOutage"@en .
+# 
+# https://purl.org/sifis/hazards#PowerSurge
+<https://purl.org/sifis/hazards#PowerSurge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#PowerSurge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#PowerSurge> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#PowerSurge> <https://purl.org/sifis/hazards#description> "The execution may lead to exposure to high voltages" .
+<https://purl.org/sifis/hazards#PowerSurge> <https://purl.org/sifis/hazards#name> "Power surge" .
+<https://purl.org/sifis/hazards#PowerSurge> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#PowerSurge> <http://www.w3.org/2000/01/rdf-schema#label> "PowerSurge"@en .
+# 
+# https://purl.org/sifis/hazards#Privacy
+<https://purl.org/sifis/hazards#Privacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#Privacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Category> .
+<https://purl.org/sifis/hazards#Privacy> <https://purl.org/sifis/hazards#description> "Category which includes all the privacy-related hazards." .
+<https://purl.org/sifis/hazards#Privacy> <https://purl.org/sifis/hazards#name> "Privacy" .
+<https://purl.org/sifis/hazards#Privacy> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of category referring to hazards that may compromise privacy"@en .
+<https://purl.org/sifis/hazards#Privacy> <http://www.w3.org/2000/01/rdf-schema#label> "Privacy"@en .
+# 
+# https://purl.org/sifis/hazards#RecordIssuedCommands
+<https://purl.org/sifis/hazards#RecordIssuedCommands> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#RecordIssuedCommands> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#RecordIssuedCommands> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Privacy> .
+<https://purl.org/sifis/hazards#RecordIssuedCommands> <https://purl.org/sifis/hazards#description> "The execution authorises the app to get and save user inputs" .
+<https://purl.org/sifis/hazards#RecordIssuedCommands> <https://purl.org/sifis/hazards#name> "Record issued commands" .
+<https://purl.org/sifis/hazards#RecordIssuedCommands> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
+<https://purl.org/sifis/hazards#RecordIssuedCommands> <http://www.w3.org/2000/01/rdf-schema#label> "RecordIssuedCommands"@en .
+# 
+# https://purl.org/sifis/hazards#RecordUserPreferences
+<https://purl.org/sifis/hazards#RecordUserPreferences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#RecordUserPreferences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#RecordUserPreferences> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Privacy> .
+<https://purl.org/sifis/hazards#RecordUserPreferences> <https://purl.org/sifis/hazards#description> "The execution authorises the app to get and save information about the user's preferences" .
+<https://purl.org/sifis/hazards#RecordUserPreferences> <https://purl.org/sifis/hazards#name> "Record user preferences" .
+<https://purl.org/sifis/hazards#RecordUserPreferences> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
+<https://purl.org/sifis/hazards#RecordUserPreferences> <http://www.w3.org/2000/01/rdf-schema#label> "RecordUserPreferences"@en .
+# 
+# https://purl.org/sifis/hazards#Safety
+<https://purl.org/sifis/hazards#Safety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#Safety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Category> .
+<https://purl.org/sifis/hazards#Safety> <https://purl.org/sifis/hazards#description> "Category which includes all the safety-related hazards." .
+<https://purl.org/sifis/hazards#Safety> <https://purl.org/sifis/hazards#name> "Safety" .
+<https://purl.org/sifis/hazards#Safety> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of category referring to hazards that may lead to physical harm to people and/or assets"@en .
+<https://purl.org/sifis/hazards#Safety> <http://www.w3.org/2000/01/rdf-schema#label> "Safety"@en .
+# 
+# https://purl.org/sifis/hazards#SpendMoney
+<https://purl.org/sifis/hazards#SpendMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#SpendMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#SpendMoney> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Financial> .
+<https://purl.org/sifis/hazards#SpendMoney> <https://purl.org/sifis/hazards#description> "The execution authorises the app to use payment information and make a payment transaction" .
+<https://purl.org/sifis/hazards#SpendMoney> <https://purl.org/sifis/hazards#name> "Spend money" .
+<https://purl.org/sifis/hazards#SpendMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of finance-related hazard"@en .
+<https://purl.org/sifis/hazards#SpendMoney> <http://www.w3.org/2000/01/rdf-schema#label> "SpendMoney"@en .
+# 
+# https://purl.org/sifis/hazards#SpoiledFood
+<https://purl.org/sifis/hazards#SpoiledFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#SpoiledFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#SpoiledFood> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#SpoiledFood> <https://purl.org/sifis/hazards#description> "The execution may lead to rotten food" .
+<https://purl.org/sifis/hazards#SpoiledFood> <https://purl.org/sifis/hazards#name> "Spoiled food" .
+<https://purl.org/sifis/hazards#SpoiledFood> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#SpoiledFood> <http://www.w3.org/2000/01/rdf-schema#label> "SpoiledFood"@en .
+# 
+# https://purl.org/sifis/hazards#TakeDeviceScreenshots
+<https://purl.org/sifis/hazards#TakeDeviceScreenshots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#TakeDeviceScreenshots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#TakeDeviceScreenshots> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Privacy> .
+<https://purl.org/sifis/hazards#TakeDeviceScreenshots> <https://purl.org/sifis/hazards#description> "The execution authorises the app to read the display output and take screenshots of it" .
+<https://purl.org/sifis/hazards#TakeDeviceScreenshots> <https://purl.org/sifis/hazards#name> "Take device screenshots" .
+<https://purl.org/sifis/hazards#TakeDeviceScreenshots> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
+<https://purl.org/sifis/hazards#TakeDeviceScreenshots> <http://www.w3.org/2000/01/rdf-schema#label> "TakeDeviceScreenshots"@en .
+# 
+# https://purl.org/sifis/hazards#TakePictures
+<https://purl.org/sifis/hazards#TakePictures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#TakePictures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#TakePictures> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Privacy> .
+<https://purl.org/sifis/hazards#TakePictures> <https://purl.org/sifis/hazards#description> "The execution authorises the app to use a camera and take photos" .
+<https://purl.org/sifis/hazards#TakePictures> <https://purl.org/sifis/hazards#name> "Take pictures" .
+<https://purl.org/sifis/hazards#TakePictures> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
+<https://purl.org/sifis/hazards#TakePictures> <http://www.w3.org/2000/01/rdf-schema#label> "TakePictures"@en .
+# 
+# https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess
+<https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess> <https://purl.org/sifis/hazards#description> "The execution disables a protection mechanism and unauthorised individuals may physically enter home" .
+<https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess> <https://purl.org/sifis/hazards#name> "Unauthorised physical access" .
+<https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess> <http://www.w3.org/2000/01/rdf-schema#label> "UnauthorisedPhysicalAccess"@en .
+# 
+# https://purl.org/sifis/hazards#WaterConsumption
+<https://purl.org/sifis/hazards#WaterConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#WaterConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#WaterConsumption> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Financial> .
+<https://purl.org/sifis/hazards#WaterConsumption> <https://purl.org/sifis/hazards#description> "The execution enables a device that consumes water" .
+<https://purl.org/sifis/hazards#WaterConsumption> <https://purl.org/sifis/hazards#name> "Water consumption" .
+<https://purl.org/sifis/hazards#WaterConsumption> <https://purl.org/sifis/hazards#riskScore> ""^^<https://purl.org/sifis/hazards#level> .
+<https://purl.org/sifis/hazards#WaterConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of finance-related hazard"@en .
+<https://purl.org/sifis/hazards#WaterConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "WaterConsumption"@en .
+# 
+# https://purl.org/sifis/hazards#WaterFlooding
+<https://purl.org/sifis/hazards#WaterFlooding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/sifis/hazards#WaterFlooding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
+<https://purl.org/sifis/hazards#WaterFlooding> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
+<https://purl.org/sifis/hazards#WaterFlooding> <https://purl.org/sifis/hazards#description> "The execution allows water usage which may lead to flood" .
+<https://purl.org/sifis/hazards#WaterFlooding> <https://purl.org/sifis/hazards#name> "Water flooding" .
+<https://purl.org/sifis/hazards#WaterFlooding> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
+<https://purl.org/sifis/hazards#WaterFlooding> <http://www.w3.org/2000/01/rdf-schema#label> "WaterFlooding"@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
