@@ -2,12 +2,12 @@
 <https://purl.org/sifis/hazards> <http://purl.org/dc/terms/contributor> <https://www.dauin.polito.it/it/personale/scheda/(nominativo)/luigi.derussis> .
 <https://purl.org/sifis/hazards> <http://purl.org/dc/terms/creator> <https://www.iit.cnr.it/marco.rasori/> .
 <https://purl.org/sifis/hazards> <http://purl.org/dc/terms/description> "The SIFIS-Home Hazards Ontology (SHO) has been created to extend the Thing Description (TD) of smart devices within Web of Things (WoT). The ontology defines various types of hazard as Individual which can be used to characterise Properties, Actions, and Events in a TD."@en .
-<https://purl.org/sifis/hazards> <http://purl.org/dc/terms/modified> "2023-03-14"@en .
+<https://purl.org/sifis/hazards> <http://purl.org/dc/terms/modified> "2022-05-9"@en .
 <https://purl.org/sifis/hazards> <http://purl.org/dc/terms/publisher> <https://www.sifis-home.eu> .
 <https://purl.org/sifis/hazards> <http://purl.org/dc/terms/title> "The SIFIS-Home Hazards Ontology"@en .
 <https://purl.org/sifis/hazards> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sho" .
 <https://purl.org/sifis/hazards> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://purl.org/sifis/hazards" .
-<https://purl.org/sifis/hazards> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.3"@en .
+<https://purl.org/sifis/hazards> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.2" .
 <https://purl.org/sifis/hazards> <https://spdx.org/rdf/terms/licenseId> "MIT" .
 <https://purl.org/sifis/hazards> <https://spdx.org/rdf/terms/licenseText> "The MIT License (MIT)\n\nCopyright (c) 2022 The SIFIS-Home project <https://www.sifis-home.eu>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." .
 # 
@@ -248,16 +248,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://purl.org/sifis/hazards#AudioVideoStream> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of privacy-related hazard"@en .
 <https://purl.org/sifis/hazards#AudioVideoStream> <http://www.w3.org/2000/01/rdf-schema#label> "AudioVideoStream"@en .
 # 
-# https://purl.org/sifis/hazards#Burn
-<https://purl.org/sifis/hazards#Burn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://purl.org/sifis/hazards#Burn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
-<https://purl.org/sifis/hazards#Burn> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
-<https://purl.org/sifis/hazards#Burn> <https://purl.org/sifis/hazards#description> "The execution allows usage of devices that may cause burns" .
-<https://purl.org/sifis/hazards#Burn> <https://purl.org/sifis/hazards#name> "Burn" .
-<https://purl.org/sifis/hazards#Burn> <https://purl.org/sifis/hazards#riskScore> ""^^<https://purl.org/sifis/hazards#level> .
-<https://purl.org/sifis/hazards#Burn> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
-<https://purl.org/sifis/hazards#Burn> <http://www.w3.org/2000/01/rdf-schema#label> "Burn"@en .
-# 
 # https://purl.org/sifis/hazards#ElectricEnergyConsumption
 <https://purl.org/sifis/hazards#ElectricEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://purl.org/sifis/hazards#ElectricEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
@@ -384,16 +374,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://purl.org/sifis/hazards#Safety> <https://purl.org/sifis/hazards#name> "Safety" .
 <https://purl.org/sifis/hazards#Safety> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of category referring to hazards that may lead to physical harm to people and/or assets"@en .
 <https://purl.org/sifis/hazards#Safety> <http://www.w3.org/2000/01/rdf-schema#label> "Safety"@en .
-# 
-# https://purl.org/sifis/hazards#Scald
-<https://purl.org/sifis/hazards#Scald> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://purl.org/sifis/hazards#Scald> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sifis/hazards#Hazard> .
-<https://purl.org/sifis/hazards#Scald> <https://purl.org/sifis/hazards#hasCategory> <https://purl.org/sifis/hazards#Safety> .
-<https://purl.org/sifis/hazards#Scald> <https://purl.org/sifis/hazards#description> "The execution allows usage of devices that may cause scalds" .
-<https://purl.org/sifis/hazards#Scald> <https://purl.org/sifis/hazards#name> "Scald" .
-<https://purl.org/sifis/hazards#Scald> <https://purl.org/sifis/hazards#riskScore> ""^^<https://purl.org/sifis/hazards#level> .
-<https://purl.org/sifis/hazards#Scald> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of safety-related hazard"@en .
-<https://purl.org/sifis/hazards#Scald> <http://www.w3.org/2000/01/rdf-schema#label> "Scald"@en .
 # 
 # https://purl.org/sifis/hazards#SpendMoney
 <https://purl.org/sifis/hazards#SpendMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

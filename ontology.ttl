@@ -1,28 +1,23 @@
 @prefix : <https://purl.org/sifis/hazards#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix sho: <https://purl.org/sifis/hazards#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix spdx: <https://spdx.org/rdf/terms/> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix schema: <http://schema.org/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://purl.org/sifis/hazards> .
 
 <https://purl.org/sifis/hazards> rdf:type owl:Ontology ;
-                                  dcterms:contributor <https://www.dauin.polito.it/it/personale/scheda/(nominativo)/luigi.derussis> ;
-                                  dcterms:creator <https://www.iit.cnr.it/marco.rasori/> ;
-                                  dcterms:description "The SIFIS-Home Hazards Ontology (SHO) has been created to extend the Thing Description (TD) of smart devices within Web of Things (WoT). The ontology defines various types of hazard as Individual which can be used to characterise Properties, Actions, and Events in a TD."@en ;
-                                  dcterms:modified "2022-05-9"@en ;
-                                  dcterms:publisher <https://www.sifis-home.eu> ;
-                                  dcterms:title "The SIFIS-Home Hazards Ontology"@en ;
-                                  vann:preferredNamespacePrefix "sho" ;
-                                  vann:preferredNamespaceUri "https://purl.org/sifis/hazards" ;
-                                  owl:versionInfo "v1.0.2"^^xsd:string ;
-                                  spdx:licenseId "MIT" ;
-                                  spdx:licenseText """The MIT License (MIT)
+                                  <http://purl.org/dc/terms/contributor> <https://www.dauin.polito.it/it/personale/scheda/(nominativo)/luigi.derussis> ;
+                                  <http://purl.org/dc/terms/creator> <https://www.iit.cnr.it/marco.rasori/> ;
+                                  <http://purl.org/dc/terms/description> "The SIFIS-Home Hazards Ontology (SHO) has been created to extend the Thing Description (TD) of smart devices within Web of Things (WoT). The ontology defines various types of hazard as Individual which can be used to characterise Properties, Actions, and Events in a TD."@en ;
+                                  <http://purl.org/dc/terms/modified> "2023-03-14"@en ;
+                                  <http://purl.org/dc/terms/publisher> <https://www.sifis-home.eu> ;
+                                  <http://purl.org/dc/terms/title> "The SIFIS-Home Hazards Ontology"@en ;
+                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "sho" ;
+                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://purl.org/sifis/hazards" ;
+                                  owl:versionInfo "v1.0.3"@en ;
+                                  <https://spdx.org/rdf/terms/licenseId> "MIT" ;
+                                  <https://spdx.org/rdf/terms/licenseText> """The MIT License (MIT)
 
 Copyright (c) 2022 The SIFIS-Home project <https://www.sifis-home.eu>
 
@@ -30,74 +25,74 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."""^^xsd:string .
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.""" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://purl.org/dc/terms/contributor
-dcterms:contributor rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
-dcterms:creator rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
-dcterms:description rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/description
-schema:description rdf:type owl:AnnotationProperty .
+<http://schema.org/description> rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/domainIncludes
-schema:domainIncludes rdf:type owl:AnnotationProperty .
+<http://schema.org/domainIncludes> rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/name
-schema:name rdf:type owl:AnnotationProperty .
+<http://schema.org/name> rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/rangeIncludes
-schema:rangeIncludes rdf:type owl:AnnotationProperty .
+<http://schema.org/rangeIncludes> rdf:type owl:AnnotationProperty .
 
 
 ###  https://spdx.org/rdf/terms/licenseId
-spdx:licenseId rdf:type owl:AnnotationProperty .
+<https://spdx.org/rdf/terms/licenseId> rdf:type owl:AnnotationProperty .
 
 
 ###  https://spdx.org/rdf/terms/licenseText
-spdx:licenseText rdf:type owl:AnnotationProperty .
+<https://spdx.org/rdf/terms/licenseText> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -109,16 +104,16 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://purl.org/sifis/hazards#level
-sho:level rdf:type rdfs:Datatype ;
-          rdfs:comment "An integer in the range from zero to ten included. [0,10]"@en ;
-          owl:equivalentClass [ rdf:type rdfs:Datatype ;
-                                owl:onDatatype xsd:integer ;
-                                owl:withRestrictions ( [ xsd:minInclusive 0
-                                                       ]
-                                                       [ xsd:maxInclusive 10
-                                                       ]
-                                                     )
-                              ] .
+:level rdf:type rdfs:Datatype ;
+       rdfs:comment "An integer in the range from zero to ten included. [0,10]"@en ;
+       owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                             owl:onDatatype xsd:integer ;
+                             owl:withRestrictions ( [ xsd:minInclusive 0
+                                                    ]
+                                                    [ xsd:maxInclusive 10
+                                                    ]
+                                                  )
+                           ] .
 
 
 #################################################################
@@ -126,23 +121,23 @@ sho:level rdf:type rdfs:Datatype ;
 #################################################################
 
 ###  https://purl.org/sifis/hazards#hasCategory
-sho:hasCategory rdf:type owl:ObjectProperty ;
-                rdfs:domain sho:Hazard ;
-                rdfs:range sho:Category ;
-                schema:domainIncludes sho:Hazard ;
-                schema:rangeIncludes sho:Category ;
-                rdfs:comment "A relationship identifying the category of a hazard."@en ;
-                rdfs:label "has category"@en .
+:hasCategory rdf:type owl:ObjectProperty ;
+             rdfs:domain :Hazard ;
+             rdfs:range :Category ;
+             <http://schema.org/domainIncludes> :Hazard ;
+             <http://schema.org/rangeIncludes> :Category ;
+             rdfs:comment "A relationship identifying the category of a hazard."@en ;
+             rdfs:label "has category"@en .
 
 
 ###  https://purl.org/sifis/hazards#hasHazard
-sho:hasHazard rdf:type owl:ObjectProperty ;
-              rdfs:domain <https://www.w3.org/2019/wot/td#InteractionAffordance> ;
-              rdfs:range sho:Hazard ;
-              schema:domainIncludes <https://www.w3.org/2019/wot/td#InteractionAffordance> ;
-              schema:rangeIncludes sho:Hazard ;
-              rdfs:comment "A relationship identifying a hazard of an interaction affordance, being either a property, an action, or an event."@en ;
-              rdfs:label "has hazard"@en .
+:hasHazard rdf:type owl:ObjectProperty ;
+           rdfs:domain <https://www.w3.org/2019/wot/td#InteractionAffordance> ;
+           rdfs:range :Hazard ;
+           <http://schema.org/domainIncludes> <https://www.w3.org/2019/wot/td#InteractionAffordance> ;
+           <http://schema.org/rangeIncludes> :Hazard ;
+           rdfs:comment "A relationship identifying a hazard of an interaction affordance, being either a property, an action, or an event."@en ;
+           rdfs:label "has hazard"@en .
 
 
 #################################################################
@@ -150,43 +145,43 @@ sho:hasHazard rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  https://purl.org/sifis/hazards#description
-sho:description rdf:type owl:DatatypeProperty ;
-                rdfs:domain [ rdf:type owl:Class ;
-                              owl:unionOf ( sho:Category
-                                            sho:Hazard
-                                          )
-                            ] ;
-                rdfs:range xsd:string ;
-                schema:domainIncludes sho:Category ,
-                                      sho:Hazard ;
-                schema:rangeIncludes xsd:string ;
-                rdfs:comment "A relationship identifying the description of either a hazard or a category."@en ;
-                rdfs:label "description"@en .
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Category
+                                         :Hazard
+                                       )
+                         ] ;
+             rdfs:range xsd:string ;
+             <http://schema.org/domainIncludes> :Category ,
+                                                :Hazard ;
+             <http://schema.org/rangeIncludes> xsd:string ;
+             rdfs:comment "A relationship identifying the description of either a hazard or a category."@en ;
+             rdfs:label "description"@en .
 
 
 ###  https://purl.org/sifis/hazards#name
-sho:name rdf:type owl:DatatypeProperty ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( sho:Category
-                                     sho:Hazard
-                                   )
-                     ] ;
-         rdfs:range xsd:string ;
-         schema:domainIncludes sho:Category ,
-                               sho:Hazard ;
-         schema:rangeIncludes xsd:string ;
-         rdfs:comment "A relationship identifying the name of either a hazard or a category."@en ;
-         rdfs:label "name"@en .
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Category
+                                  :Hazard
+                                )
+                  ] ;
+      rdfs:range xsd:string ;
+      <http://schema.org/domainIncludes> :Category ,
+                                         :Hazard ;
+      <http://schema.org/rangeIncludes> xsd:string ;
+      rdfs:comment "A relationship identifying the name of either a hazard or a category."@en ;
+      rdfs:label "name"@en .
 
 
 ###  https://purl.org/sifis/hazards#riskScore
-sho:riskScore rdf:type owl:DatatypeProperty ;
-              rdfs:domain sho:Hazard ;
-              rdfs:range sho:level ;
-              schema:domainIncludes sho:Hazard ;
-              schema:rangeIncludes sho:level ;
-              rdfs:comment "A relationship identifying the risk score associated with a hazard."@en ;
-              rdfs:label "risk score"@en .
+:riskScore rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Hazard ;
+           rdfs:range :level ;
+           <http://schema.org/domainIncludes> :Hazard ;
+           <http://schema.org/rangeIncludes> :level ;
+           rdfs:comment "A relationship identifying the risk score associated with a hazard."@en ;
+           rdfs:label "risk score"@en .
 
 
 #################################################################
@@ -194,18 +189,18 @@ sho:riskScore rdf:type owl:DatatypeProperty ;
 #################################################################
 
 ###  https://purl.org/sifis/hazards#Category
-sho:Category rdf:type owl:Class ;
-             owl:disjointWith sho:Hazard ,
-                              <https://www.w3.org/2019/wot/td#InteractionAffordance> ;
-             rdfs:comment "A broad class gathering hazards with similar characteristics."@en ;
-             rdfs:label "Category"@en .
+:Category rdf:type owl:Class ;
+          owl:disjointWith :Hazard ,
+                           <https://www.w3.org/2019/wot/td#InteractionAffordance> ;
+          rdfs:comment "A broad class gathering hazards with similar characteristics."@en ;
+          rdfs:label "Category"@en .
 
 
 ###  https://purl.org/sifis/hazards#Hazard
-sho:Hazard rdf:type owl:Class ;
-           owl:disjointWith <https://www.w3.org/2019/wot/td#InteractionAffordance> ;
-           rdfs:comment "A possible risk associated with the invocation of a given interaction affordance. Within a thing description, properties, actions, and events can be invoked, and their execution may lead to hazards."@en ;
-           rdfs:label "Hazard"@en .
+:Hazard rdf:type owl:Class ;
+        owl:disjointWith <https://www.w3.org/2019/wot/td#InteractionAffordance> ;
+        rdfs:comment "A possible risk associated with the invocation of a given interaction affordance. Within a thing description, properties, actions, and events can be invoked, and their execution may lead to hazards."@en ;
+        rdfs:label "Hazard"@en .
 
 
 ###  https://www.w3.org/2019/wot/td#InteractionAffordance
@@ -219,255 +214,277 @@ sho:Hazard rdf:type owl:Class ;
 #################################################################
 
 ###  https://purl.org/sifis/hazards#AirPoisoning
-sho:AirPoisoning rdf:type owl:NamedIndividual ,
-                          sho:Hazard ;
-                 sho:hasCategory sho:Safety ;
-                 sho:description "The execution may release toxic gases"^^xsd:string ;
-                 sho:name "Air poisoning"^^xsd:string ;
-                 rdfs:comment "A type of safety-related hazard"@en ;
-                 rdfs:label "AirPoisoning"@en .
+:AirPoisoning rdf:type owl:NamedIndividual ,
+                       :Hazard ;
+              :hasCategory :Safety ;
+              :description "The execution may release toxic gases" ;
+              :name "Air poisoning" ;
+              rdfs:comment "A type of safety-related hazard"@en ;
+              rdfs:label "AirPoisoning"@en .
 
 
 ###  https://purl.org/sifis/hazards#Asphyxia
-sho:Asphyxia rdf:type owl:NamedIndividual ,
-                      sho:Hazard ;
-             sho:hasCategory sho:Safety ;
-             sho:description "The execution may cause oxygen deficiency by gaseous substances"^^xsd:string ;
-             sho:name "Asphyxia"^^xsd:string ;
-             rdfs:comment "A type of safety-related hazard"@en ;
-             rdfs:label "Asphyxia"@en .
+:Asphyxia rdf:type owl:NamedIndividual ,
+                   :Hazard ;
+          :hasCategory :Safety ;
+          :description "The execution may cause oxygen deficiency by gaseous substances" ;
+          :name "Asphyxia" ;
+          rdfs:comment "A type of safety-related hazard"@en ;
+          rdfs:label "Asphyxia"@en .
 
 
 ###  https://purl.org/sifis/hazards#AudioVideoRecordAndStore
-sho:AudioVideoRecordAndStore rdf:type owl:NamedIndividual ,
-                                      sho:Hazard ;
-                             sho:hasCategory sho:Privacy ;
-                             sho:description "The execution authorises the app to record and save a video with audio on persistent storage"^^xsd:string ;
-                             sho:name "Audio video record and store"^^xsd:string ;
-                             rdfs:comment "A type of privacy-related hazard"@en ;
-                             rdfs:label "AudioVideoRecordAndStore"@en .
+:AudioVideoRecordAndStore rdf:type owl:NamedIndividual ,
+                                   :Hazard ;
+                          :hasCategory :Privacy ;
+                          :description "The execution authorises the app to record and save a video with audio on persistent storage" ;
+                          :name "Audio video record and store" ;
+                          rdfs:comment "A type of privacy-related hazard"@en ;
+                          rdfs:label "AudioVideoRecordAndStore"@en .
 
 
 ###  https://purl.org/sifis/hazards#AudioVideoStream
-sho:AudioVideoStream rdf:type owl:NamedIndividual ,
-                              sho:Hazard ;
-                     sho:hasCategory sho:Privacy ;
-                     sho:description "The execution authorises the app to obtain a video stream with audio"^^xsd:string ;
-                     sho:name "Audio video stream"^^xsd:string ;
-                     rdfs:comment "A type of privacy-related hazard"@en ;
-                     rdfs:label "AudioVideoStream"@en .
+:AudioVideoStream rdf:type owl:NamedIndividual ,
+                           :Hazard ;
+                  :hasCategory :Privacy ;
+                  :description "The execution authorises the app to obtain a video stream with audio" ;
+                  :name "Audio video stream" ;
+                  rdfs:comment "A type of privacy-related hazard"@en ;
+                  rdfs:label "AudioVideoStream"@en .
+
+
+###  https://purl.org/sifis/hazards#Burn
+:Burn rdf:type owl:NamedIndividual ,
+               :Hazard ;
+      :hasCategory :Safety ;
+      :description "The execution allows usage of devices that may cause burns" ;
+      :name "Burn" ;
+      :riskScore ""^^:level ;
+      rdfs:comment "A type of safety-related hazard"@en ;
+      rdfs:label "Burn"@en .
 
 
 ###  https://purl.org/sifis/hazards#ElectricEnergyConsumption
-sho:ElectricEnergyConsumption rdf:type owl:NamedIndividual ,
-                                       sho:Hazard ;
-                              sho:hasCategory sho:Financial ;
-                              sho:description "The execution enables a device that consumes electricity"^^xsd:string ;
-                              sho:name "Electric energy consumption"^^xsd:string ;
-                              sho:riskScore ""^^sho:level ;
-                              rdfs:comment "A type of finance-related hazard"@en ;
-                              rdfs:label "ElectricEnergyConsumption"@en .
+:ElectricEnergyConsumption rdf:type owl:NamedIndividual ,
+                                    :Hazard ;
+                           :hasCategory :Financial ;
+                           :description "The execution enables a device that consumes electricity" ;
+                           :name "Electric energy consumption" ;
+                           :riskScore ""^^:level ;
+                           rdfs:comment "A type of finance-related hazard"@en ;
+                           rdfs:label "ElectricEnergyConsumption"@en .
 
 
 ###  https://purl.org/sifis/hazards#Explosion
-sho:Explosion rdf:type owl:NamedIndividual ,
-                       sho:Hazard ;
-              sho:hasCategory sho:Safety ;
-              sho:description "The execution may cause an explosion"^^xsd:string ;
-              sho:name "Explosion"^^xsd:string ;
-              rdfs:comment "A type of safety-related hazard"@en ;
-              rdfs:label "Explosion"@en .
+:Explosion rdf:type owl:NamedIndividual ,
+                    :Hazard ;
+           :hasCategory :Safety ;
+           :description "The execution may cause an explosion" ;
+           :name "Explosion" ;
+           rdfs:comment "A type of safety-related hazard"@en ;
+           rdfs:label "Explosion"@en .
 
 
 ###  https://purl.org/sifis/hazards#Financial
-sho:Financial rdf:type owl:NamedIndividual ,
-                       sho:Category ;
-              sho:description "Category which includes all the financial-related hazards."^^xsd:string ;
-              sho:name "Financial"^^xsd:string ;
-              rdfs:comment "A type of category referring to hazards that lead to an expense"@en ;
-              rdfs:label "Financial"@en .
+:Financial rdf:type owl:NamedIndividual ,
+                    :Category ;
+           :description "Category which includes all the financial-related hazards." ;
+           :name "Financial" ;
+           rdfs:comment "A type of category referring to hazards that lead to an expense"@en ;
+           rdfs:label "Financial"@en .
 
 
 ###  https://purl.org/sifis/hazards#FireHazard
-sho:FireHazard rdf:type owl:NamedIndividual ,
-                        sho:Hazard ;
-               sho:hasCategory sho:Safety ;
-               sho:description "The execution may cause fire"^^xsd:string ;
-               sho:name "Fire hazard"^^xsd:string ;
-               sho:riskScore ""^^sho:level ;
-               rdfs:comment "A type of safety-related hazard"@en ;
-               rdfs:label "FireHazard"@en .
+:FireHazard rdf:type owl:NamedIndividual ,
+                     :Hazard ;
+            :hasCategory :Safety ;
+            :description "The execution may cause fire" ;
+            :name "Fire hazard" ;
+            :riskScore ""^^:level ;
+            rdfs:comment "A type of safety-related hazard"@en ;
+            rdfs:label "FireHazard"@en .
 
 
 ###  https://purl.org/sifis/hazards#GasConsumption
-sho:GasConsumption rdf:type owl:NamedIndividual ,
-                            sho:Hazard ;
-                   sho:hasCategory sho:Financial ;
-                   sho:description "The execution enables a device that consumes gas"^^xsd:string ;
-                   sho:name "Gas consumption"^^xsd:string ;
-                   sho:riskScore ""^^sho:level ;
-                   rdfs:comment "A type of finance-related hazard"@en ;
-                   rdfs:label "GasConsumption"@en .
+:GasConsumption rdf:type owl:NamedIndividual ,
+                         :Hazard ;
+                :hasCategory :Financial ;
+                :description "The execution enables a device that consumes gas" ;
+                :name "Gas consumption" ;
+                :riskScore ""^^:level ;
+                rdfs:comment "A type of finance-related hazard"@en ;
+                rdfs:label "GasConsumption"@en .
 
 
 ###  https://purl.org/sifis/hazards#LogEnergyConsumption
-sho:LogEnergyConsumption rdf:type owl:NamedIndividual ,
-                                  sho:Hazard ;
-                         sho:hasCategory sho:Privacy ;
-                         sho:description "The execution authorises the app to get and save information about the app's energy impact on the device the app runs on"^^xsd:string ;
-                         sho:name "Log energy consumption"^^xsd:string ;
-                         rdfs:comment "A type of privacy-related hazard"@en ;
-                         rdfs:label "LogEnergyConsumption"@en .
+:LogEnergyConsumption rdf:type owl:NamedIndividual ,
+                               :Hazard ;
+                      :hasCategory :Privacy ;
+                      :description "The execution authorises the app to get and save information about the app's energy impact on the device the app runs on" ;
+                      :name "Log energy consumption" ;
+                      rdfs:comment "A type of privacy-related hazard"@en ;
+                      rdfs:label "LogEnergyConsumption"@en .
 
 
 ###  https://purl.org/sifis/hazards#LogUsageTime
-sho:LogUsageTime rdf:type owl:NamedIndividual ,
-                          sho:Hazard ;
-                 sho:hasCategory sho:Privacy ;
-                 sho:description "The execution authorises the app to get and save information about the app's duration of use"^^xsd:string ;
-                 sho:name "Log usage time"^^xsd:string ;
-                 rdfs:comment "A type of privacy-related hazard"@en ;
-                 rdfs:label "LogUsageTime"@en .
+:LogUsageTime rdf:type owl:NamedIndividual ,
+                       :Hazard ;
+              :hasCategory :Privacy ;
+              :description "The execution authorises the app to get and save information about the app's duration of use" ;
+              :name "Log usage time" ;
+              rdfs:comment "A type of privacy-related hazard"@en ;
+              rdfs:label "LogUsageTime"@en .
 
 
 ###  https://purl.org/sifis/hazards#PaySubscriptionFee
-sho:PaySubscriptionFee rdf:type owl:NamedIndividual ,
-                                sho:Hazard ;
-                       sho:hasCategory sho:Financial ;
-                       sho:description "The execution authorises the app to use payment information and make a periodic payment"^^xsd:string ;
-                       sho:name "Pay subscription fee"^^xsd:string ;
-                       rdfs:comment "A type of finance-related hazard"@en ;
-                       rdfs:label "PaySubscriptionFee"@en .
+:PaySubscriptionFee rdf:type owl:NamedIndividual ,
+                             :Hazard ;
+                    :hasCategory :Financial ;
+                    :description "The execution authorises the app to use payment information and make a periodic payment" ;
+                    :name "Pay subscription fee" ;
+                    rdfs:comment "A type of finance-related hazard"@en ;
+                    rdfs:label "PaySubscriptionFee"@en .
 
 
 ###  https://purl.org/sifis/hazards#PowerOutage
-sho:PowerOutage rdf:type owl:NamedIndividual ,
-                         sho:Hazard ;
-                sho:hasCategory sho:Safety ;
-                sho:description "The execution may cause an interruption in the supply of electricity"^^xsd:string ;
-                sho:name "Power outage"^^xsd:string ;
-                sho:riskScore ""^^sho:level ;
-                rdfs:comment "A type of safety-related hazard"@en ;
-                rdfs:label "PowerOutage"@en .
+:PowerOutage rdf:type owl:NamedIndividual ,
+                      :Hazard ;
+             :hasCategory :Safety ;
+             :description "The execution may cause an interruption in the supply of electricity" ;
+             :name "Power outage" ;
+             :riskScore ""^^:level ;
+             rdfs:comment "A type of safety-related hazard"@en ;
+             rdfs:label "PowerOutage"@en .
 
 
 ###  https://purl.org/sifis/hazards#PowerSurge
-sho:PowerSurge rdf:type owl:NamedIndividual ,
-                        sho:Hazard ;
-               sho:hasCategory sho:Safety ;
-               sho:description "The execution may lead to exposure to high voltages"^^xsd:string ;
-               sho:name "Power surge"^^xsd:string ;
-               rdfs:comment "A type of safety-related hazard"@en ;
-               rdfs:label "PowerSurge"@en .
+:PowerSurge rdf:type owl:NamedIndividual ,
+                     :Hazard ;
+            :hasCategory :Safety ;
+            :description "The execution may lead to exposure to high voltages" ;
+            :name "Power surge" ;
+            rdfs:comment "A type of safety-related hazard"@en ;
+            rdfs:label "PowerSurge"@en .
 
 
 ###  https://purl.org/sifis/hazards#Privacy
-sho:Privacy rdf:type owl:NamedIndividual ,
-                     sho:Category ;
-            sho:description "Category which includes all the privacy-related hazards."^^xsd:string ;
-            sho:name "Privacy"^^xsd:string ;
-            rdfs:comment "A type of category referring to hazards that may compromise privacy"@en ;
-            rdfs:label "Privacy"@en .
+:Privacy rdf:type owl:NamedIndividual ,
+                  :Category ;
+         :description "Category which includes all the privacy-related hazards." ;
+         :name "Privacy" ;
+         rdfs:comment "A type of category referring to hazards that may compromise privacy"@en ;
+         rdfs:label "Privacy"@en .
 
 
 ###  https://purl.org/sifis/hazards#RecordIssuedCommands
-sho:RecordIssuedCommands rdf:type owl:NamedIndividual ,
-                                  sho:Hazard ;
-                         sho:hasCategory sho:Privacy ;
-                         sho:description "The execution authorises the app to get and save user inputs"^^xsd:string ;
-                         sho:name "Record issued commands"^^xsd:string ;
-                         rdfs:comment "A type of privacy-related hazard"@en ;
-                         rdfs:label "RecordIssuedCommands"@en .
+:RecordIssuedCommands rdf:type owl:NamedIndividual ,
+                               :Hazard ;
+                      :hasCategory :Privacy ;
+                      :description "The execution authorises the app to get and save user inputs" ;
+                      :name "Record issued commands" ;
+                      rdfs:comment "A type of privacy-related hazard"@en ;
+                      rdfs:label "RecordIssuedCommands"@en .
 
 
 ###  https://purl.org/sifis/hazards#RecordUserPreferences
-sho:RecordUserPreferences rdf:type owl:NamedIndividual ,
-                                   sho:Hazard ;
-                          sho:hasCategory sho:Privacy ;
-                          sho:description "The execution authorises the app to get and save information about the user's preferences"^^xsd:string ;
-                          sho:name "Record user preferences"^^xsd:string ;
-                          rdfs:comment "A type of privacy-related hazard"@en ;
-                          rdfs:label "RecordUserPreferences"@en .
+:RecordUserPreferences rdf:type owl:NamedIndividual ,
+                                :Hazard ;
+                       :hasCategory :Privacy ;
+                       :description "The execution authorises the app to get and save information about the user's preferences" ;
+                       :name "Record user preferences" ;
+                       rdfs:comment "A type of privacy-related hazard"@en ;
+                       rdfs:label "RecordUserPreferences"@en .
 
 
 ###  https://purl.org/sifis/hazards#Safety
-sho:Safety rdf:type owl:NamedIndividual ,
-                    sho:Category ;
-           sho:description "Category which includes all the safety-related hazards."^^xsd:string ;
-           sho:name "Safety"^^xsd:string ;
-           rdfs:comment "A type of category referring to hazards that may lead to physical harm to people and/or assets"@en ;
-           rdfs:label "Safety"@en .
+:Safety rdf:type owl:NamedIndividual ,
+                 :Category ;
+        :description "Category which includes all the safety-related hazards." ;
+        :name "Safety" ;
+        rdfs:comment "A type of category referring to hazards that may lead to physical harm to people and/or assets"@en ;
+        rdfs:label "Safety"@en .
+
+
+###  https://purl.org/sifis/hazards#Scald
+:Scald rdf:type owl:NamedIndividual ,
+                :Hazard ;
+       :hasCategory :Safety ;
+       :description "The execution allows usage of devices that may cause scalds" ;
+       :name "Scald" ;
+       :riskScore ""^^:level ;
+       rdfs:comment "A type of safety-related hazard"@en ;
+       rdfs:label "Scald"@en .
 
 
 ###  https://purl.org/sifis/hazards#SpendMoney
-sho:SpendMoney rdf:type owl:NamedIndividual ,
-                        sho:Hazard ;
-               sho:hasCategory sho:Financial ;
-               sho:description "The execution authorises the app to use payment information and make a payment transaction"^^xsd:string ;
-               sho:name "Spend money"^^xsd:string ;
-               rdfs:comment "A type of finance-related hazard"@en ;
-               rdfs:label "SpendMoney"@en .
+:SpendMoney rdf:type owl:NamedIndividual ,
+                     :Hazard ;
+            :hasCategory :Financial ;
+            :description "The execution authorises the app to use payment information and make a payment transaction" ;
+            :name "Spend money" ;
+            rdfs:comment "A type of finance-related hazard"@en ;
+            rdfs:label "SpendMoney"@en .
 
 
 ###  https://purl.org/sifis/hazards#SpoiledFood
-sho:SpoiledFood rdf:type owl:NamedIndividual ,
-                         sho:Hazard ;
-                sho:hasCategory sho:Safety ;
-                sho:description "The execution may lead to rotten food"^^xsd:string ;
-                sho:name "Spoiled food"^^xsd:string ;
-                rdfs:comment "A type of safety-related hazard"@en ;
-                rdfs:label "SpoiledFood"@en .
+:SpoiledFood rdf:type owl:NamedIndividual ,
+                      :Hazard ;
+             :hasCategory :Safety ;
+             :description "The execution may lead to rotten food" ;
+             :name "Spoiled food" ;
+             rdfs:comment "A type of safety-related hazard"@en ;
+             rdfs:label "SpoiledFood"@en .
 
 
 ###  https://purl.org/sifis/hazards#TakeDeviceScreenshots
-sho:TakeDeviceScreenshots rdf:type owl:NamedIndividual ,
-                                   sho:Hazard ;
-                          sho:hasCategory sho:Privacy ;
-                          sho:description "The execution authorises the app to read the display output and take screenshots of it"^^xsd:string ;
-                          sho:name "Take device screenshots"^^xsd:string ;
-                          rdfs:comment "A type of privacy-related hazard"@en ;
-                          rdfs:label "TakeDeviceScreenshots"@en .
+:TakeDeviceScreenshots rdf:type owl:NamedIndividual ,
+                                :Hazard ;
+                       :hasCategory :Privacy ;
+                       :description "The execution authorises the app to read the display output and take screenshots of it" ;
+                       :name "Take device screenshots" ;
+                       rdfs:comment "A type of privacy-related hazard"@en ;
+                       rdfs:label "TakeDeviceScreenshots"@en .
 
 
 ###  https://purl.org/sifis/hazards#TakePictures
-sho:TakePictures rdf:type owl:NamedIndividual ,
-                          sho:Hazard ;
-                 sho:hasCategory sho:Privacy ;
-                 sho:description "The execution authorises the app to use a camera and take photos"^^xsd:string ;
-                 sho:name "Take pictures"^^xsd:string ;
-                 rdfs:comment "A type of privacy-related hazard"@en ;
-                 rdfs:label "TakePictures"@en .
+:TakePictures rdf:type owl:NamedIndividual ,
+                       :Hazard ;
+              :hasCategory :Privacy ;
+              :description "The execution authorises the app to use a camera and take photos" ;
+              :name "Take pictures" ;
+              rdfs:comment "A type of privacy-related hazard"@en ;
+              rdfs:label "TakePictures"@en .
 
 
 ###  https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess
-sho:UnauthorisedPhysicalAccess rdf:type owl:NamedIndividual ,
-                                        sho:Hazard ;
-                               sho:hasCategory sho:Safety ;
-                               sho:description "The execution disables a protection mechanism and unauthorised individuals may physically enter home"^^xsd:string ;
-                               sho:name "Unauthorised physical access"^^xsd:string ;
-                               rdfs:comment "A type of safety-related hazard"@en ;
-                               rdfs:label "UnauthorisedPhysicalAccess"@en .
+:UnauthorisedPhysicalAccess rdf:type owl:NamedIndividual ,
+                                     :Hazard ;
+                            :hasCategory :Safety ;
+                            :description "The execution disables a protection mechanism and unauthorised individuals may physically enter home" ;
+                            :name "Unauthorised physical access" ;
+                            rdfs:comment "A type of safety-related hazard"@en ;
+                            rdfs:label "UnauthorisedPhysicalAccess"@en .
 
 
 ###  https://purl.org/sifis/hazards#WaterConsumption
-sho:WaterConsumption rdf:type owl:NamedIndividual ,
-                              sho:Hazard ;
-                     sho:hasCategory sho:Financial ;
-                     sho:description "The execution enables a device that consumes water"^^xsd:string ;
-                     sho:name "Water consumption"^^xsd:string ;
-                     sho:riskScore ""^^sho:level ;
-                     rdfs:comment "A type of finance-related hazard"@en ;
-                     rdfs:label "WaterConsumption"@en .
+:WaterConsumption rdf:type owl:NamedIndividual ,
+                           :Hazard ;
+                  :hasCategory :Financial ;
+                  :description "The execution enables a device that consumes water" ;
+                  :name "Water consumption" ;
+                  :riskScore ""^^:level ;
+                  rdfs:comment "A type of finance-related hazard"@en ;
+                  rdfs:label "WaterConsumption"@en .
 
 
 ###  https://purl.org/sifis/hazards#WaterFlooding
-sho:WaterFlooding rdf:type owl:NamedIndividual ,
-                           sho:Hazard ;
-                  sho:hasCategory sho:Safety ;
-                  sho:description "The execution allows water usage which may lead to flood"^^xsd:string ;
-                  sho:name "Water flooding"^^xsd:string ;
-                  rdfs:comment "A type of safety-related hazard"@en ;
-                  rdfs:label "WaterFlooding"@en .
+:WaterFlooding rdf:type owl:NamedIndividual ,
+                        :Hazard ;
+               :hasCategory :Safety ;
+               :description "The execution allows water usage which may lead to flood" ;
+               :name "Water flooding" ;
+               rdfs:comment "A type of safety-related hazard"@en ;
+               rdfs:label "WaterFlooding"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
