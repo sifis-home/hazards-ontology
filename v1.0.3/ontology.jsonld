@@ -1,70 +1,70 @@
 {
   "@graph" : [ {
-    "@id" : "_:b1",
-    "xsd:maxInclusive" : 10
-  }, {
-    "@id" : "_:b10",
+    "@id" : "_:b0",
     "@type" : "rdfs:Datatype",
     "onDatatype" : "xsd:integer",
     "withRestrictions" : {
-      "@list" : [ "_:b5", "_:b1" ]
+      "@list" : [ "_:b8", "_:b9" ]
     }
   }, {
-    "@id" : "_:b5",
-    "xsd:minInclusive" : 0
-  }, {
-    "@id" : "_:b7",
+    "@id" : "_:b2",
     "@type" : "owl:Class",
     "unionOf" : {
-      "@list" : [ "sho:Category", "sho:Hazard" ]
+      "@list" : [ "https://purl.org/sifis/hazards#Category", "https://purl.org/sifis/hazards#Hazard" ]
+    }
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "https://purl.org/sifis/hazards#Category", "https://purl.org/sifis/hazards#Hazard" ]
     }
   }, {
     "@id" : "_:b8",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "sho:Category", "sho:Hazard" ]
-    }
+    "xsd:minInclusive" : 0
   }, {
-    "@id" : "terms:contributor",
+    "@id" : "_:b9",
+    "xsd:maxInclusive" : 10
+  }, {
+    "@id" : "http://purl.org/dc/terms/contributor",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "terms:creator",
+    "@id" : "http://purl.org/dc/terms/creator",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "terms:description",
+    "@id" : "http://purl.org/dc/terms/description",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "terms:license",
+    "@id" : "http://purl.org/dc/terms/license",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "terms:modified",
+    "@id" : "http://purl.org/dc/terms/modified",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "terms:publisher",
+    "@id" : "http://purl.org/dc/terms/publisher",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "terms:source",
+    "@id" : "http://purl.org/dc/terms/source",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "terms:title",
+    "@id" : "http://purl.org/dc/terms/title",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "vann:preferredNamespacePrefix",
+    "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "vann:preferredNamespaceUri",
+    "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "schema:description",
+    "@id" : "http://schema.org/description",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "schema:domainIncludes",
+    "@id" : "http://schema.org/domainIncludes",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "schema:name",
+    "@id" : "http://schema.org/name",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "schema:rangeIncludes",
+    "@id" : "http://schema.org/rangeIncludes",
     "@type" : "owl:AnnotationProperty"
   }, {
     "@id" : "xsd:date",
@@ -74,13 +74,13 @@
     "@type" : "owl:Ontology",
     "contributor" : "https://www.dauin.polito.it/it/personale/scheda/(nominativo)/luigi.derussis",
     "creator" : "https://www.iit.cnr.it/marco.rasori/",
-    "terms:description" : {
+    "http://purl.org/dc/terms/description" : {
       "@language" : "en",
       "@value" : "The SIFIS-Home Hazards Ontology (SHO) has been created to extend the Thing Description (TD) of smart devices within Web of Things (WoT). The ontology defines various types of hazard as Individual which can be used to characterise Properties, Actions, and Events in a TD."
     },
     "modified" : {
       "@language" : "en",
-      "@value" : "2023-06-21"
+      "@value" : "2023-03-14"
     },
     "publisher" : "https://www.sifis-home.eu",
     "title" : {
@@ -91,15 +91,15 @@
     "preferredNamespaceUri" : "https://purl.org/sifis/hazards",
     "versionInfo" : {
       "@language" : "en",
-      "@value" : "v1.0.4"
+      "@value" : "v1.0.3"
     },
     "licenseId" : "MIT",
     "licenseText" : "The MIT License (MIT)\n\nCopyright (c) 2022 The SIFIS-Home project <https://www.sifis-home.eu>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
   }, {
-    "@id" : "sho:AirPoisoning",
+    "@id" : "https://purl.org/sifis/hazards#AirPoisoning",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -109,15 +109,14 @@
       "@language" : "en",
       "@value" : "AirPoisoning"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:air-poisoning",
     "description" : "The execution may release toxic gases",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Air poisoning"
   }, {
-    "@id" : "sho:Asphyxia",
+    "@id" : "https://purl.org/sifis/hazards#Asphyxia",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -127,15 +126,14 @@
       "@language" : "en",
       "@value" : "Asphyxia"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:asphyxia",
     "description" : "The execution may cause oxygen deficiency by gaseous substances",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Asphyxia"
   }, {
-    "@id" : "sho:AudioVideoRecordAndStore",
+    "@id" : "https://purl.org/sifis/hazards#AudioVideoRecordAndStore",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -145,15 +143,14 @@
       "@language" : "en",
       "@value" : "AudioVideoRecordAndStore"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:audio-video-record-and-store",
     "description" : "The execution authorises the app to record and save a video with audio on persistent storage",
-    "hasCategory" : "sho:Privacy",
+    "hasCategory" : "https://purl.org/sifis/hazards#Privacy",
     "name" : "Audio video record and store"
   }, {
-    "@id" : "sho:AudioVideoStream",
+    "@id" : "https://purl.org/sifis/hazards#AudioVideoStream",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -163,15 +160,14 @@
       "@language" : "en",
       "@value" : "AudioVideoStream"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:audio-video-stream",
     "description" : "The execution authorises the app to obtain a video stream with audio",
-    "hasCategory" : "sho:Privacy",
+    "hasCategory" : "https://purl.org/sifis/hazards#Privacy",
     "name" : "Audio video stream"
   }, {
-    "@id" : "sho:Burn",
+    "@id" : "https://purl.org/sifis/hazards#Burn",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -181,13 +177,12 @@
       "@language" : "en",
       "@value" : "Burn"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:burn",
     "description" : "The execution allows usage of devices that may cause burns",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Burn",
     "riskScore" : ""
   }, {
-    "@id" : "sho:Category",
+    "@id" : "https://purl.org/sifis/hazards#Category",
     "@type" : "owl:Class",
     "comment" : {
       "@language" : "en",
@@ -197,12 +192,12 @@
       "@language" : "en",
       "@value" : "Category"
     },
-    "disjointWith" : [ "https://www.w3.org/2019/wot/td#InteractionAffordance", "sho:Hazard" ]
+    "disjointWith" : [ "https://www.w3.org/2019/wot/td#InteractionAffordance", "https://purl.org/sifis/hazards#Hazard" ]
   }, {
-    "@id" : "sho:ElectricEnergyConsumption",
+    "@id" : "https://purl.org/sifis/hazards#ElectricEnergyConsumption",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -212,16 +207,15 @@
       "@language" : "en",
       "@value" : "ElectricEnergyConsumption"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:electric-energy-consumption",
     "description" : "The execution enables a device that consumes electricity",
-    "hasCategory" : "sho:Financial",
+    "hasCategory" : "https://purl.org/sifis/hazards#Financial",
     "name" : "Electric energy consumption",
     "riskScore" : ""
   }, {
-    "@id" : "sho:Explosion",
+    "@id" : "https://purl.org/sifis/hazards#Explosion",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -231,15 +225,14 @@
       "@language" : "en",
       "@value" : "Explosion"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:explosion",
     "description" : "The execution may cause an explosion",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Explosion"
   }, {
-    "@id" : "sho:Financial",
+    "@id" : "https://purl.org/sifis/hazards#Financial",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Category"
+      "@id" : "https://purl.org/sifis/hazards#Category"
     },
     "comment" : {
       "@language" : "en",
@@ -252,10 +245,10 @@
     "description" : "Category which includes all the financial-related hazards.",
     "name" : "Financial"
   }, {
-    "@id" : "sho:FireHazard",
+    "@id" : "https://purl.org/sifis/hazards#FireHazard",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -265,16 +258,15 @@
       "@language" : "en",
       "@value" : "FireHazard"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:fire-hazard",
     "description" : "The execution may cause fire",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Fire hazard",
     "riskScore" : ""
   }, {
-    "@id" : "sho:GasConsumption",
+    "@id" : "https://purl.org/sifis/hazards#GasConsumption",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -284,13 +276,12 @@
       "@language" : "en",
       "@value" : "GasConsumption"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:gas-consumption",
     "description" : "The execution enables a device that consumes gas",
-    "hasCategory" : "sho:Financial",
+    "hasCategory" : "https://purl.org/sifis/hazards#Financial",
     "name" : "Gas consumption",
     "riskScore" : ""
   }, {
-    "@id" : "sho:Hazard",
+    "@id" : "https://purl.org/sifis/hazards#Hazard",
     "@type" : "owl:Class",
     "comment" : {
       "@language" : "en",
@@ -302,10 +293,10 @@
     },
     "disjointWith" : "https://www.w3.org/2019/wot/td#InteractionAffordance"
   }, {
-    "@id" : "sho:LogEnergyConsumption",
+    "@id" : "https://purl.org/sifis/hazards#LogEnergyConsumption",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -315,15 +306,14 @@
       "@language" : "en",
       "@value" : "LogEnergyConsumption"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:log-energy-consumption",
     "description" : "The execution authorises the app to get and save information about the app's energy impact on the device the app runs on",
-    "hasCategory" : "sho:Privacy",
+    "hasCategory" : "https://purl.org/sifis/hazards#Privacy",
     "name" : "Log energy consumption"
   }, {
-    "@id" : "sho:LogUsageTime",
+    "@id" : "https://purl.org/sifis/hazards#LogUsageTime",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -333,15 +323,14 @@
       "@language" : "en",
       "@value" : "LogUsageTime"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:log-usage-time",
     "description" : "The execution authorises the app to get and save information about the app's duration of use",
-    "hasCategory" : "sho:Privacy",
+    "hasCategory" : "https://purl.org/sifis/hazards#Privacy",
     "name" : "Log usage time"
   }, {
-    "@id" : "sho:PaySubscriptionFee",
+    "@id" : "https://purl.org/sifis/hazards#PaySubscriptionFee",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -351,15 +340,14 @@
       "@language" : "en",
       "@value" : "PaySubscriptionFee"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:pay-subscription-fee",
     "description" : "The execution authorises the app to use payment information and make a periodic payment",
-    "hasCategory" : "sho:Financial",
+    "hasCategory" : "https://purl.org/sifis/hazards#Financial",
     "name" : "Pay subscription fee"
   }, {
-    "@id" : "sho:PowerOutage",
+    "@id" : "https://purl.org/sifis/hazards#PowerOutage",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -369,16 +357,15 @@
       "@language" : "en",
       "@value" : "PowerOutage"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:power-outage",
     "description" : "The execution may cause an interruption in the supply of electricity",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Power outage",
     "riskScore" : ""
   }, {
-    "@id" : "sho:PowerSurge",
+    "@id" : "https://purl.org/sifis/hazards#PowerSurge",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -388,15 +375,14 @@
       "@language" : "en",
       "@value" : "PowerSurge"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:power-surge",
     "description" : "The execution may lead to exposure to high voltages",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Power surge"
   }, {
-    "@id" : "sho:Privacy",
+    "@id" : "https://purl.org/sifis/hazards#Privacy",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Category"
+      "@id" : "https://purl.org/sifis/hazards#Category"
     },
     "comment" : {
       "@language" : "en",
@@ -409,10 +395,10 @@
     "description" : "Category which includes all the privacy-related hazards.",
     "name" : "Privacy"
   }, {
-    "@id" : "sho:RecordIssuedCommands",
+    "@id" : "https://purl.org/sifis/hazards#RecordIssuedCommands",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -422,15 +408,14 @@
       "@language" : "en",
       "@value" : "RecordIssuedCommands"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:record-issued-commands",
     "description" : "The execution authorises the app to get and save user inputs",
-    "hasCategory" : "sho:Privacy",
+    "hasCategory" : "https://purl.org/sifis/hazards#Privacy",
     "name" : "Record issued commands"
   }, {
-    "@id" : "sho:RecordUserPreferences",
+    "@id" : "https://purl.org/sifis/hazards#RecordUserPreferences",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -440,15 +425,14 @@
       "@language" : "en",
       "@value" : "RecordUserPreferences"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:record-user-preferences",
     "description" : "The execution authorises the app to get and save information about the user's preferences",
-    "hasCategory" : "sho:Privacy",
+    "hasCategory" : "https://purl.org/sifis/hazards#Privacy",
     "name" : "Record user preferences"
   }, {
-    "@id" : "sho:Safety",
+    "@id" : "https://purl.org/sifis/hazards#Safety",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Category"
+      "@id" : "https://purl.org/sifis/hazards#Category"
     },
     "comment" : {
       "@language" : "en",
@@ -461,10 +445,10 @@
     "description" : "Category which includes all the safety-related hazards.",
     "name" : "Safety"
   }, {
-    "@id" : "sho:Scald",
+    "@id" : "https://purl.org/sifis/hazards#Scald",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -474,16 +458,15 @@
       "@language" : "en",
       "@value" : "Scald"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:scald",
     "description" : "The execution allows usage of devices that may cause scalds",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Scald",
     "riskScore" : ""
   }, {
-    "@id" : "sho:SpendMoney",
+    "@id" : "https://purl.org/sifis/hazards#SpendMoney",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -493,15 +476,14 @@
       "@language" : "en",
       "@value" : "SpendMoney"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:spend-money",
     "description" : "The execution authorises the app to use payment information and make a payment transaction",
-    "hasCategory" : "sho:Financial",
+    "hasCategory" : "https://purl.org/sifis/hazards#Financial",
     "name" : "Spend money"
   }, {
-    "@id" : "sho:SpoiledFood",
+    "@id" : "https://purl.org/sifis/hazards#SpoiledFood",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -511,15 +493,14 @@
       "@language" : "en",
       "@value" : "SpoiledFood"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:spoiled-food",
     "description" : "The execution may lead to rotten food",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Spoiled food"
   }, {
-    "@id" : "sho:TakeDeviceScreenshots",
+    "@id" : "https://purl.org/sifis/hazards#TakeDeviceScreenshots",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -529,15 +510,14 @@
       "@language" : "en",
       "@value" : "TakeDeviceScreenshots"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:take-device-screenshots",
     "description" : "The execution authorises the app to read the display output and take screenshots of it",
-    "hasCategory" : "sho:Privacy",
+    "hasCategory" : "https://purl.org/sifis/hazards#Privacy",
     "name" : "Take device screenshots"
   }, {
-    "@id" : "sho:TakePictures",
+    "@id" : "https://purl.org/sifis/hazards#TakePictures",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -547,15 +527,14 @@
       "@language" : "en",
       "@value" : "TakePictures"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:take-pictures",
     "description" : "The execution authorises the app to use a camera and take photos",
-    "hasCategory" : "sho:Privacy",
+    "hasCategory" : "https://purl.org/sifis/hazards#Privacy",
     "name" : "Take pictures"
   }, {
-    "@id" : "sho:UnauthorisedPhysicalAccess",
+    "@id" : "https://purl.org/sifis/hazards#UnauthorisedPhysicalAccess",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -565,15 +544,14 @@
       "@language" : "en",
       "@value" : "UnauthorisedPhysicalAccess"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:unauthorised-physical-access",
     "description" : "The execution disables a protection mechanism and unauthorised individuals may physically enter home",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Unauthorised physical access"
   }, {
-    "@id" : "sho:WaterConsumption",
+    "@id" : "https://purl.org/sifis/hazards#WaterConsumption",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -583,16 +561,15 @@
       "@language" : "en",
       "@value" : "WaterConsumption"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:water-consumption",
     "description" : "The execution enables a device that consumes water",
-    "hasCategory" : "sho:Financial",
+    "hasCategory" : "https://purl.org/sifis/hazards#Financial",
     "name" : "Water consumption",
     "riskScore" : ""
   }, {
-    "@id" : "sho:WaterFlooding",
+    "@id" : "https://purl.org/sifis/hazards#WaterFlooding",
     "@type" : "owl:NamedIndividual",
     "rdf:type" : {
-      "@id" : "sho:Hazard"
+      "@id" : "https://purl.org/sifis/hazards#Hazard"
     },
     "comment" : {
       "@language" : "en",
@@ -602,60 +579,44 @@
       "@language" : "en",
       "@value" : "WaterFlooding"
     },
-    "attributeId" : "eu:sifis-home:1.0:hazard:water-flooding",
     "description" : "The execution allows water usage which may lead to flood",
-    "hasCategory" : "sho:Safety",
+    "hasCategory" : "https://purl.org/sifis/hazards#Safety",
     "name" : "Water flooding"
   }, {
-    "@id" : "sho:attributeId",
+    "@id" : "https://purl.org/sifis/hazards#description",
     "@type" : "owl:DatatypeProperty",
-    "domainIncludes" : "sho:Hazard",
-    "rangeIncludes" : "xsd:string",
-    "comment" : {
-      "@language" : "en",
-      "@value" : "A relationship denoting the identifier of an XACML attribute associated with a hazard."
-    },
-    "domain" : "sho:Hazard",
-    "label" : {
-      "@language" : "en",
-      "@value" : "attribute id"
-    },
-    "range" : "xsd:string"
-  }, {
-    "@id" : "sho:description",
-    "@type" : "owl:DatatypeProperty",
-    "domainIncludes" : [ "sho:Hazard", "sho:Category" ],
+    "domainIncludes" : [ "https://purl.org/sifis/hazards#Hazard", "https://purl.org/sifis/hazards#Category" ],
     "rangeIncludes" : "xsd:string",
     "comment" : {
       "@language" : "en",
       "@value" : "A relationship identifying the description of either a hazard or a category."
     },
-    "domain" : "_:b8",
+    "domain" : "_:b2",
     "label" : {
       "@language" : "en",
       "@value" : "description"
     },
     "range" : "xsd:string"
   }, {
-    "@id" : "sho:hasCategory",
+    "@id" : "https://purl.org/sifis/hazards#hasCategory",
     "@type" : "owl:ObjectProperty",
-    "domainIncludes" : "sho:Hazard",
-    "rangeIncludes" : "sho:Category",
+    "domainIncludes" : "https://purl.org/sifis/hazards#Hazard",
+    "rangeIncludes" : "https://purl.org/sifis/hazards#Category",
     "comment" : {
       "@language" : "en",
       "@value" : "A relationship identifying the category of a hazard."
     },
-    "domain" : "sho:Hazard",
+    "domain" : "https://purl.org/sifis/hazards#Hazard",
     "label" : {
       "@language" : "en",
       "@value" : "has category"
     },
-    "range" : "sho:Category"
+    "range" : "https://purl.org/sifis/hazards#Category"
   }, {
-    "@id" : "sho:hasHazard",
+    "@id" : "https://purl.org/sifis/hazards#hasHazard",
     "@type" : "owl:ObjectProperty",
     "domainIncludes" : "https://www.w3.org/2019/wot/td#InteractionAffordance",
-    "rangeIncludes" : "sho:Hazard",
+    "rangeIncludes" : "https://purl.org/sifis/hazards#Hazard",
     "comment" : {
       "@language" : "en",
       "@value" : "A relationship identifying a hazard of an interaction affordance, being either a property, an action, or an event."
@@ -665,50 +626,50 @@
       "@language" : "en",
       "@value" : "has hazard"
     },
-    "range" : "sho:Hazard"
+    "range" : "https://purl.org/sifis/hazards#Hazard"
   }, {
-    "@id" : "sho:level",
+    "@id" : "https://purl.org/sifis/hazards#level",
     "@type" : "rdfs:Datatype",
     "comment" : {
       "@language" : "en",
       "@value" : "An integer in the range from zero to ten included. [0,10]"
     },
-    "equivalentClass" : "_:b10"
+    "equivalentClass" : "_:b0"
   }, {
-    "@id" : "sho:name",
+    "@id" : "https://purl.org/sifis/hazards#name",
     "@type" : "owl:DatatypeProperty",
-    "domainIncludes" : [ "sho:Hazard", "sho:Category" ],
+    "domainIncludes" : [ "https://purl.org/sifis/hazards#Hazard", "https://purl.org/sifis/hazards#Category" ],
     "rangeIncludes" : "xsd:string",
     "comment" : {
       "@language" : "en",
       "@value" : "A relationship identifying the name of either a hazard or a category."
     },
-    "domain" : "_:b7",
+    "domain" : "_:b3",
     "label" : {
       "@language" : "en",
       "@value" : "name"
     },
     "range" : "xsd:string"
   }, {
-    "@id" : "sho:riskScore",
+    "@id" : "https://purl.org/sifis/hazards#riskScore",
     "@type" : "owl:DatatypeProperty",
-    "domainIncludes" : "sho:Hazard",
-    "rangeIncludes" : "sho:level",
+    "domainIncludes" : "https://purl.org/sifis/hazards#Hazard",
+    "rangeIncludes" : "https://purl.org/sifis/hazards#level",
     "comment" : {
       "@language" : "en",
       "@value" : "A relationship identifying the risk score associated with a hazard."
     },
-    "domain" : "sho:Hazard",
+    "domain" : "https://purl.org/sifis/hazards#Hazard",
     "label" : {
       "@language" : "en",
       "@value" : "risk score"
     },
-    "range" : "sho:level"
+    "range" : "https://purl.org/sifis/hazards#level"
   }, {
-    "@id" : "terms1:licenseId",
+    "@id" : "https://spdx.org/rdf/terms/licenseId",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "terms1:licenseText",
+    "@id" : "https://spdx.org/rdf/terms/licenseText",
     "@type" : "owl:AnnotationProperty"
   }, {
     "@id" : "https://www.w3.org/2019/wot/td#InteractionAffordance",
@@ -735,9 +696,6 @@
     "description" : {
       "@id" : "https://purl.org/sifis/hazards#description"
     },
-    "attributeId" : {
-      "@id" : "https://purl.org/sifis/hazards#attributeId"
-    },
     "hasCategory" : {
       "@id" : "https://purl.org/sifis/hazards#hasCategory",
       "@type" : "@id"
@@ -746,16 +704,12 @@
       "@id" : "https://purl.org/sifis/hazards#riskScore",
       "@type" : "https://purl.org/sifis/hazards#level"
     },
-    "rest" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+    "withRestrictions" : {
+      "@id" : "http://www.w3.org/2002/07/owl#withRestrictions",
       "@type" : "@id"
     },
-    "first" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
-      "@type" : "@id"
-    },
-    "unionOf" : {
-      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+    "onDatatype" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onDatatype",
       "@type" : "@id"
     },
     "rangeIncludes" : {
@@ -774,32 +728,33 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
       "@type" : "@id"
     },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
     "maxInclusive" : {
       "@id" : "http://www.w3.org/2001/XMLSchema#maxInclusive",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "minInclusive" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#minInclusive",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "disjointWith" : {
       "@id" : "http://www.w3.org/2002/07/owl#disjointWith",
       "@type" : "@id"
     },
-    "minInclusive" : {
-      "@id" : "http://www.w3.org/2001/XMLSchema#minInclusive",
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
-    },
     "equivalentClass" : {
       "@id" : "http://www.w3.org/2002/07/owl#equivalentClass",
       "@type" : "@id"
-    },
-    "withRestrictions" : {
-      "@id" : "http://www.w3.org/2002/07/owl#withRestrictions",
-      "@type" : "@id"
-    },
-    "onDatatype" : {
-      "@id" : "http://www.w3.org/2002/07/owl#onDatatype",
-      "@type" : "@id"
-    },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "licenseText" : {
       "@id" : "https://spdx.org/rdf/terms/licenseText"
@@ -817,30 +772,28 @@
       "@id" : "http://purl.org/dc/terms/contributor",
       "@type" : "@id"
     },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher",
-      "@type" : "@id"
-    },
-    "creator" : {
-      "@id" : "http://purl.org/dc/terms/creator",
       "@type" : "@id"
     },
     "modified" : {
       "@id" : "http://purl.org/dc/terms/modified"
     },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
     "@vocab" : "https://purl.org/sifis/hazards#",
-    "schema" : "http://schema.org/",
     "owl" : "http://www.w3.org/2002/07/owl#",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "terms" : "http://purl.org/dc/terms/",
-    "xml" : "http://www.w3.org/XML/1998/namespace",
-    "vann" : "http://purl.org/vocab/vann/",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "sho" : "https://purl.org/sifis/hazards#",
-    "terms1" : "https://spdx.org/rdf/terms/"
+    "xml" : "http://www.w3.org/XML/1998/namespace"
   }
 }

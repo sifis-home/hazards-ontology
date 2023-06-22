@@ -10,12 +10,12 @@
                                   <http://purl.org/dc/terms/contributor> <https://www.dauin.polito.it/it/personale/scheda/(nominativo)/luigi.derussis> ;
                                   <http://purl.org/dc/terms/creator> <https://www.iit.cnr.it/marco.rasori/> ;
                                   <http://purl.org/dc/terms/description> "The SIFIS-Home Hazards Ontology (SHO) has been created to extend the Thing Description (TD) of smart devices within Web of Things (WoT). The ontology defines various types of hazard as Individual which can be used to characterise Properties, Actions, and Events in a TD."@en ;
-                                  <http://purl.org/dc/terms/modified> "2023-06-21"@en ;
+                                  <http://purl.org/dc/terms/modified> "2023-03-14"@en ;
                                   <http://purl.org/dc/terms/publisher> <https://www.sifis-home.eu> ;
                                   <http://purl.org/dc/terms/title> "The SIFIS-Home Hazards Ontology"@en ;
                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "sho" ;
                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://purl.org/sifis/hazards" ;
-                                  owl:versionInfo "v1.0.4"@en ;
+                                  owl:versionInfo "v1.0.3"@en ;
                                   <https://spdx.org/rdf/terms/licenseId> "MIT" ;
                                   <https://spdx.org/rdf/terms/licenseText> """The MIT License (MIT)
 
@@ -144,16 +144,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  https://purl.org/sifis/hazards#attributeId
-:attributeId rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Hazard ;
-             rdfs:range xsd:string ;
-             <http://schema.org/domainIncludes> :Hazard ;
-             <http://schema.org/rangeIncludes> xsd:string ;
-             rdfs:comment "A relationship denoting the identifier of an XACML attribute associated with a hazard."@en ;
-             rdfs:label "attribute id"@en .
-
-
 ###  https://purl.org/sifis/hazards#description
 :description rdf:type owl:DatatypeProperty ;
              rdfs:domain [ rdf:type owl:Class ;
@@ -227,7 +217,6 @@ xsd:date rdf:type rdfs:Datatype .
 :AirPoisoning rdf:type owl:NamedIndividual ,
                        :Hazard ;
               :hasCategory :Safety ;
-              :attributeId "eu:sifis-home:1.0:hazard:air-poisoning" ;
               :description "The execution may release toxic gases" ;
               :name "Air poisoning" ;
               rdfs:comment "A type of safety-related hazard"@en ;
@@ -238,7 +227,6 @@ xsd:date rdf:type rdfs:Datatype .
 :Asphyxia rdf:type owl:NamedIndividual ,
                    :Hazard ;
           :hasCategory :Safety ;
-          :attributeId "eu:sifis-home:1.0:hazard:asphyxia" ;
           :description "The execution may cause oxygen deficiency by gaseous substances" ;
           :name "Asphyxia" ;
           rdfs:comment "A type of safety-related hazard"@en ;
@@ -249,7 +237,6 @@ xsd:date rdf:type rdfs:Datatype .
 :AudioVideoRecordAndStore rdf:type owl:NamedIndividual ,
                                    :Hazard ;
                           :hasCategory :Privacy ;
-                          :attributeId "eu:sifis-home:1.0:hazard:audio-video-record-and-store" ;
                           :description "The execution authorises the app to record and save a video with audio on persistent storage" ;
                           :name "Audio video record and store" ;
                           rdfs:comment "A type of privacy-related hazard"@en ;
@@ -260,7 +247,6 @@ xsd:date rdf:type rdfs:Datatype .
 :AudioVideoStream rdf:type owl:NamedIndividual ,
                            :Hazard ;
                   :hasCategory :Privacy ;
-                  :attributeId "eu:sifis-home:1.0:hazard:audio-video-stream" ;
                   :description "The execution authorises the app to obtain a video stream with audio" ;
                   :name "Audio video stream" ;
                   rdfs:comment "A type of privacy-related hazard"@en ;
@@ -271,7 +257,6 @@ xsd:date rdf:type rdfs:Datatype .
 :Burn rdf:type owl:NamedIndividual ,
                :Hazard ;
       :hasCategory :Safety ;
-      :attributeId "eu:sifis-home:1.0:hazard:burn" ;
       :description "The execution allows usage of devices that may cause burns" ;
       :name "Burn" ;
       :riskScore ""^^:level ;
@@ -283,7 +268,6 @@ xsd:date rdf:type rdfs:Datatype .
 :ElectricEnergyConsumption rdf:type owl:NamedIndividual ,
                                     :Hazard ;
                            :hasCategory :Financial ;
-                           :attributeId "eu:sifis-home:1.0:hazard:electric-energy-consumption" ;
                            :description "The execution enables a device that consumes electricity" ;
                            :name "Electric energy consumption" ;
                            :riskScore ""^^:level ;
@@ -295,7 +279,6 @@ xsd:date rdf:type rdfs:Datatype .
 :Explosion rdf:type owl:NamedIndividual ,
                     :Hazard ;
            :hasCategory :Safety ;
-           :attributeId "eu:sifis-home:1.0:hazard:explosion" ;
            :description "The execution may cause an explosion" ;
            :name "Explosion" ;
            rdfs:comment "A type of safety-related hazard"@en ;
@@ -315,7 +298,6 @@ xsd:date rdf:type rdfs:Datatype .
 :FireHazard rdf:type owl:NamedIndividual ,
                      :Hazard ;
             :hasCategory :Safety ;
-            :attributeId "eu:sifis-home:1.0:hazard:fire-hazard" ;
             :description "The execution may cause fire" ;
             :name "Fire hazard" ;
             :riskScore ""^^:level ;
@@ -327,7 +309,6 @@ xsd:date rdf:type rdfs:Datatype .
 :GasConsumption rdf:type owl:NamedIndividual ,
                          :Hazard ;
                 :hasCategory :Financial ;
-                :attributeId "eu:sifis-home:1.0:hazard:gas-consumption" ;
                 :description "The execution enables a device that consumes gas" ;
                 :name "Gas consumption" ;
                 :riskScore ""^^:level ;
@@ -339,7 +320,6 @@ xsd:date rdf:type rdfs:Datatype .
 :LogEnergyConsumption rdf:type owl:NamedIndividual ,
                                :Hazard ;
                       :hasCategory :Privacy ;
-                      :attributeId "eu:sifis-home:1.0:hazard:log-energy-consumption" ;
                       :description "The execution authorises the app to get and save information about the app's energy impact on the device the app runs on" ;
                       :name "Log energy consumption" ;
                       rdfs:comment "A type of privacy-related hazard"@en ;
@@ -350,7 +330,6 @@ xsd:date rdf:type rdfs:Datatype .
 :LogUsageTime rdf:type owl:NamedIndividual ,
                        :Hazard ;
               :hasCategory :Privacy ;
-              :attributeId "eu:sifis-home:1.0:hazard:log-usage-time" ;
               :description "The execution authorises the app to get and save information about the app's duration of use" ;
               :name "Log usage time" ;
               rdfs:comment "A type of privacy-related hazard"@en ;
@@ -361,7 +340,6 @@ xsd:date rdf:type rdfs:Datatype .
 :PaySubscriptionFee rdf:type owl:NamedIndividual ,
                              :Hazard ;
                     :hasCategory :Financial ;
-                    :attributeId "eu:sifis-home:1.0:hazard:pay-subscription-fee" ;
                     :description "The execution authorises the app to use payment information and make a periodic payment" ;
                     :name "Pay subscription fee" ;
                     rdfs:comment "A type of finance-related hazard"@en ;
@@ -372,7 +350,6 @@ xsd:date rdf:type rdfs:Datatype .
 :PowerOutage rdf:type owl:NamedIndividual ,
                       :Hazard ;
              :hasCategory :Safety ;
-             :attributeId "eu:sifis-home:1.0:hazard:power-outage" ;
              :description "The execution may cause an interruption in the supply of electricity" ;
              :name "Power outage" ;
              :riskScore ""^^:level ;
@@ -384,7 +361,6 @@ xsd:date rdf:type rdfs:Datatype .
 :PowerSurge rdf:type owl:NamedIndividual ,
                      :Hazard ;
             :hasCategory :Safety ;
-            :attributeId "eu:sifis-home:1.0:hazard:power-surge" ;
             :description "The execution may lead to exposure to high voltages" ;
             :name "Power surge" ;
             rdfs:comment "A type of safety-related hazard"@en ;
@@ -404,7 +380,6 @@ xsd:date rdf:type rdfs:Datatype .
 :RecordIssuedCommands rdf:type owl:NamedIndividual ,
                                :Hazard ;
                       :hasCategory :Privacy ;
-                      :attributeId "eu:sifis-home:1.0:hazard:record-issued-commands" ;
                       :description "The execution authorises the app to get and save user inputs" ;
                       :name "Record issued commands" ;
                       rdfs:comment "A type of privacy-related hazard"@en ;
@@ -415,7 +390,6 @@ xsd:date rdf:type rdfs:Datatype .
 :RecordUserPreferences rdf:type owl:NamedIndividual ,
                                 :Hazard ;
                        :hasCategory :Privacy ;
-                       :attributeId "eu:sifis-home:1.0:hazard:record-user-preferences" ;
                        :description "The execution authorises the app to get and save information about the user's preferences" ;
                        :name "Record user preferences" ;
                        rdfs:comment "A type of privacy-related hazard"@en ;
@@ -435,7 +409,6 @@ xsd:date rdf:type rdfs:Datatype .
 :Scald rdf:type owl:NamedIndividual ,
                 :Hazard ;
        :hasCategory :Safety ;
-       :attributeId "eu:sifis-home:1.0:hazard:scald" ;
        :description "The execution allows usage of devices that may cause scalds" ;
        :name "Scald" ;
        :riskScore ""^^:level ;
@@ -447,7 +420,6 @@ xsd:date rdf:type rdfs:Datatype .
 :SpendMoney rdf:type owl:NamedIndividual ,
                      :Hazard ;
             :hasCategory :Financial ;
-            :attributeId "eu:sifis-home:1.0:hazard:spend-money" ;
             :description "The execution authorises the app to use payment information and make a payment transaction" ;
             :name "Spend money" ;
             rdfs:comment "A type of finance-related hazard"@en ;
@@ -458,7 +430,6 @@ xsd:date rdf:type rdfs:Datatype .
 :SpoiledFood rdf:type owl:NamedIndividual ,
                       :Hazard ;
              :hasCategory :Safety ;
-             :attributeId "eu:sifis-home:1.0:hazard:spoiled-food" ;
              :description "The execution may lead to rotten food" ;
              :name "Spoiled food" ;
              rdfs:comment "A type of safety-related hazard"@en ;
@@ -469,7 +440,6 @@ xsd:date rdf:type rdfs:Datatype .
 :TakeDeviceScreenshots rdf:type owl:NamedIndividual ,
                                 :Hazard ;
                        :hasCategory :Privacy ;
-                       :attributeId "eu:sifis-home:1.0:hazard:take-device-screenshots" ;
                        :description "The execution authorises the app to read the display output and take screenshots of it" ;
                        :name "Take device screenshots" ;
                        rdfs:comment "A type of privacy-related hazard"@en ;
@@ -480,7 +450,6 @@ xsd:date rdf:type rdfs:Datatype .
 :TakePictures rdf:type owl:NamedIndividual ,
                        :Hazard ;
               :hasCategory :Privacy ;
-              :attributeId "eu:sifis-home:1.0:hazard:take-pictures" ;
               :description "The execution authorises the app to use a camera and take photos" ;
               :name "Take pictures" ;
               rdfs:comment "A type of privacy-related hazard"@en ;
@@ -491,7 +460,6 @@ xsd:date rdf:type rdfs:Datatype .
 :UnauthorisedPhysicalAccess rdf:type owl:NamedIndividual ,
                                      :Hazard ;
                             :hasCategory :Safety ;
-                            :attributeId "eu:sifis-home:1.0:hazard:unauthorised-physical-access" ;
                             :description "The execution disables a protection mechanism and unauthorised individuals may physically enter home" ;
                             :name "Unauthorised physical access" ;
                             rdfs:comment "A type of safety-related hazard"@en ;
@@ -502,7 +470,6 @@ xsd:date rdf:type rdfs:Datatype .
 :WaterConsumption rdf:type owl:NamedIndividual ,
                            :Hazard ;
                   :hasCategory :Financial ;
-                  :attributeId "eu:sifis-home:1.0:hazard:water-consumption" ;
                   :description "The execution enables a device that consumes water" ;
                   :name "Water consumption" ;
                   :riskScore ""^^:level ;
@@ -514,7 +481,6 @@ xsd:date rdf:type rdfs:Datatype .
 :WaterFlooding rdf:type owl:NamedIndividual ,
                         :Hazard ;
                :hasCategory :Safety ;
-               :attributeId "eu:sifis-home:1.0:hazard:water-flooding" ;
                :description "The execution allows water usage which may lead to flood" ;
                :name "Water flooding" ;
                rdfs:comment "A type of safety-related hazard"@en ;
